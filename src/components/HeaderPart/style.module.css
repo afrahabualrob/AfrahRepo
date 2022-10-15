@@ -1,0 +1,99 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headerSection {
+  width: 100%;
+  height: 500px;
+      margin: 0;
+      overflow:hidden ;
+      padding: 0;
+}
+.headerImage {
+  width: 100%;
+  object-fit: cover;
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+
+}
+.headerContent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.headerWrapper {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  width: 90%;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainHeading {
+  color: rgba(255, 255, 255, 1);
+  font-family: "VLNewParisHeadline";
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  line-height: 80px;
+  padding: 10px 0;
+  width: 80%;
+}
+
+.linkButton {
+  text-decoration: none;
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: solid 2px #fff;
+  padding: 10px 0;
+}
+.linkButton:hover {
+  color: #ccc;
+  border-color: #ccc;
+}
+@media only screen and (max-width: 768px) {
+  .mainHeading {
+    font-size: 36px;
+    padding: 0;
+  }
+
+  .headerImage {
+    height: 75vh;
+    z-index: -1;
+
+    /* object-fit: contain; */
+  }
+
+  .container {
+    justify-content: center;
+  }
+  .mainHeading {
+    /* height: 70vh; */
+    width: 100%;
+    text-align: center;
+  }
+  .linkButton {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+}

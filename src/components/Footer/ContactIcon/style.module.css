@@ -1,0 +1,13 @@
+.contactIcon {
+  padding-right: 8px;
+  display: block;
+}
+.contactIcon:hover {
+  filter: invert(0%) sepia(95%) saturate(10%) hue-rotate(352deg)
+    brightness(101%) contrast(100%);
+}
+@media only screen and (max-width: 768px) {
+  .contactIcon {
+    padding-right: 16px;
+  }
+}

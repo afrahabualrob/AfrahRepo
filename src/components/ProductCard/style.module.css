@@ -1,0 +1,35 @@
+.productCard_wrapper {
+  padding: 12px;
+  background-color: transparent;
+}
+
+.productCard_wrapper:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.productCard_wrapper:hover .imageWrapper {
+  opacity: 0.5;
+}
+.imagePart {
+  position: relative;
+  height: 100%;
+}
+.imageWrapper {
+  height: 100%;
+}
+.ViewBtnWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.productCard_wrapper:hover .ViewBtnWrapper {
+  opacity: 1;
+}
+@media only screen and (max-width: 450px) {
+  .ViewBtnWrapper {
+    top: 40%;
+  }
+}

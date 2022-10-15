@@ -1,0 +1,13 @@
+.asYouSeenSection{
+    padding: 30px 0 60px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.companiesImage{
+margin: auto;
+display: block;
+width: 100%;
+object-fit: contain;
+}

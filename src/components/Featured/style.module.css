@@ -1,0 +1,9 @@
+.featuredSection {
+  background-color: rgba(252, 252, 252, 1);
+  padding: 60px 0 30px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}

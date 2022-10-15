@@ -1,0 +1,22 @@
+.shopItemBtn {
+  background-color: rgba(51, 51, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .shopItemBtn {
+    font-size: 10px;
+    display: block;
+    line-height: 5px;
+    width: 80px;
+  }
+}

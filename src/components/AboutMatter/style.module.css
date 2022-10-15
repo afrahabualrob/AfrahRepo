@@ -1,0 +1,94 @@
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.aboutSection {
+  padding: 60px 0;
+}
+.aboutWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutImage,
+.aboutContent {
+  width: 48%;
+}
+.aboutImage {
+  opacity: 1;
+  background-size: 100%;
+  height: 430px;
+}
+.aboutDescription {
+  opacity: 1;
+  color: rgba(3, 3, 3, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+.category {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+.categoryItem {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "VLNewParisHeadline";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutSection {
+  padding: 30px 0;
+}
+  .container {
+    width: 100%;
+  }
+  .aboutWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .aboutImage,
+  .aboutContent {
+    width: 100%;
+    margin: auto;
+  }
+  .aboutContent {
+    padding: 24px;
+    text-align: center;
+  }
+  .aboutDescription,.categoryItem, .category{
+    text-align: center;
+
+  }
+  .aboutDescription{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 90%;
+  }
+}
+
+
+
+

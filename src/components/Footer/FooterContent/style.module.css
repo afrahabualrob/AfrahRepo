@@ -1,0 +1,13 @@
+.footerItem {
+  display: block;
+  opacity: 1;
+  color: rgba(222, 222, 222, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+  text-decoration: none;
+}

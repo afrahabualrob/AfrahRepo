@@ -1,0 +1,10 @@
+.navbar_icons {
+  display: flex;
+}
+
+.navbar_icon {
+  color: #33333a;
+  font-size: 20px;
+  padding: 0px 15px;
+  font-weight: lighter;
+}
