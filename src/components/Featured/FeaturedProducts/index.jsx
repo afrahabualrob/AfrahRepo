@@ -6,7 +6,7 @@ const FeaturedProducts = () => {
   const featureProduct = [
     {
       id: 1,
-      title: "Pueraria Mirifica And Study Phyto Estrogens",
+      title: "The Sideswept Dhoti + Bottom Line Grey (Silk)",
       imgSrc: "./assets/images/item1.png",
       price: 599.0,
       date: "10/7/2022",
@@ -61,7 +61,8 @@ const FeaturedProducts = () => {
       imgSrc: "./assets/images/item3.png",
       price: 599.0,
       date: "10/8/2022",
-      description: "An apple mobile which is nothing like apple Inspired by the continuous length of the lunghi or sarong seen in hot climates everywhere from South Asia to the Horn of Africa and southern Arabian pen… ",
+      description:
+        "An apple mobile which is nothing like apple Inspired by the continuous length of the lunghi or sarong seen in hot climates everywhere from South Asia to the Horn of Africa and southern Arabian pen… ",
       rating: 4.2,
       images: [
         "https://dummyjson.com/image/i/products/10/1.jpg",
