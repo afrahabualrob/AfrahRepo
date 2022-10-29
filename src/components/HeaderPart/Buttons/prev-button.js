@@ -3,9 +3,10 @@ import IconButton from "@mui/material/IconButton";
 import { FaAngleLeft } from "react-icons/fa";
 import styles from "./style.module.css";
 
-const PrevButton = () => {
+const PrevButton = ({ onClick }) => {
   return (
     <IconButton
+      onClick={onClick}
       sx={{
         position: "absolute",
         left: 0,
@@ -24,9 +25,7 @@ const PrevButton = () => {
         },
       }}
     >
-      <div className={styles.icon}>
-        <FaAngleLeft />
-      </div>
+      <FaAngleLeft />
     </IconButton>
   );
 };

@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./style.module.css";
 
-const ViewButton = ({ value }) => {
-  return <button className={styles.viewButton}>{value}</button>;
+const ViewButton = ({ value, onClick }) => {
+  return (
+    <button onClick={onClick} className={styles.viewButton}>
+      {value}
+    </button>
+  );
 };
 
 export default ViewButton;

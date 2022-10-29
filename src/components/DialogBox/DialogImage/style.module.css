@@ -1,0 +1,43 @@
+.smallImages {
+  height: 69px;
+  width: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(214, 214, 214, 1) 0%,
+    rgba(187, 187, 187, 1) 100%
+  );
+  display: inline;
+}
+.selectedSmallImage {
+  transition: all 0.3s linear;
+  height: 69px;
+  width: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgba(255, 96, 8, 1);
+  background-color: rgba(255, 255, 255, 1);
+  display: inline;
+}
+
+.selectedImage {
+  width: 300px;
+  object-fit: fill;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width:1150px)  and (min-width:768px ){
+  .selectedImage {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width:892px) {
+  .selectedImage {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}

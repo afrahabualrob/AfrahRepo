@@ -9,6 +9,7 @@ import Shop from "./components/Shop";
 import RecommendedVideos from "./components/RecommendedVideos";
 import AsYouSeen from "./components/AsYouSeen";
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
 import "./App.css";
 
 function App() {

@@ -1,0 +1,12 @@
+.ratingValue {
+  opacity: 1;
+  color: rgba(102, 102, 102, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: justified;
+  line-height: 20px;
+  padding-left: 10px;
+}
