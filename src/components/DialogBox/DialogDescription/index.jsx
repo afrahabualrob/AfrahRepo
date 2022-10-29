@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import styles from './style.module.css'
+import styles from "./style.module.css";
 
-const GG = () => {
-  const description =
-    " Build enlogic is w compos.  can easily pass rich data thsulated compcan easily pass rich data thsulated compcan easily pass rich data thsulated compcan easily pass rich data thsulated compcan easily pass rich data thsulated compcan easily pass rich data thsulated compcan easily pass rich data thsulated components that manage";
+const DialogDescription = ({ description }) => {
   const [descriptionShowed, setDescriptionShowed] = useState(
     description.substring(1, 180)
   );
@@ -34,4 +32,4 @@ const GG = () => {
   );
 };
 
-export default GG;
+export default DialogDescription;

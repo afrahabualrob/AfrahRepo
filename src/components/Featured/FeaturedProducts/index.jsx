@@ -10,7 +10,8 @@ const FeaturedProducts = () => {
       imgSrc: "./assets/images/item1.png",
       price: 599.0,
       date: "10/7/2022",
-      description: "An apple mobile which is nothing like apple",
+      description:
+        "Inspired by the continuous length of the lunghi or sarong seen in hot climates everywhere from South Asia to the Horn of Africa and southern Arabian pen… Inspired by the continuous length of the lunghi or sarong seen in hot climates everywhere from South Asia to the Horn of Africa and southern Arabian pen… ",
       discountPercentage: 12.96,
       rating: 4.69,
       stock: 94,
@@ -60,7 +61,7 @@ const FeaturedProducts = () => {
       imgSrc: "./assets/images/item3.png",
       price: 599.0,
       date: "10/8/2022",
-      description: "An apple mobile which is nothing like apple",
+      description: "An apple mobile which is nothing like apple Inspired by the continuous length of the lunghi or sarong seen in hot climates everywhere from South Asia to the Horn of Africa and southern Arabian pen… ",
       rating: 4.2,
       images: [
         "https://dummyjson.com/image/i/products/10/1.jpg",
@@ -79,7 +80,7 @@ const FeaturedProducts = () => {
 
     {
       id: 4,
-      title: "Pueraria Mirifica And Study Phyto Estrogens",
+      title: "Pueraria Mirifica And Study Phyto Estrogens44",
       imgSrc: "./assets/images/item4.png",
       price: 599.0,
       date: "9/1/2022",
@@ -102,7 +103,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 5,
-      title: "Pueraria Mirifica And Study Phyto Estrogens",
+      title: "Pueraria Mirifica And Study Phyto Estrogens55",
       imgSrc: "./assets/images/item5.png",
       price: 599.0,
       date: "10/6/2022",
@@ -126,7 +127,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 6,
-      title: "Pueraria Mirifica And Study Phyto Estrogens",
+      title: "Pueraria Mirifica And Study Phyto Estrogens6",
       imgSrc: "./assets/images/item6.png",
       price: 599.0,
       date: "8/8/2022",
