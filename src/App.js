@@ -1,32 +1,28 @@
 import "./App.css";
 import Nav from "./components//Nav";
 import Navbar from "./components/Navbar";
-import HeaderPart from "./components/HeaderPart";
-import Featured from "./components/Featured";
-import AboutMatter from "./components/AboutMatter";
-import Explore from "./components/Explore";
-import Shop from "./components/Shop";
-import RecommendedVideos from "./components/RecommendedVideos";
-import AsYouSeen from "./components/AsYouSeen";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./components/Pages/MainPage";
+import ProductListingPage from "./components/Pages/ProductListingPage";
+import TechniqueLanding from "./components/Pages/TechniqueLanding";
 import Footer from "./components/Footer";
-import Slider from "./components/Slider";
+import ProductListing from "./components/ProductListing";
 import "./App.css";
 
 function App() {
+  // const menuItems = ["shop", "fabric", "journal", "about"];
+
   return (
     <div className="App">
-      <div className="appHeader">
-        <Nav />
-        <Navbar />
-        <HeaderPart />
-      </div>
-      <Featured />
-      <AboutMatter />
-      <Explore />
-      <Shop />
-      <RecommendedVideos />
-      <AsYouSeen />
-      <Footer />
+      <Nav />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/shop" element={<ProductListing />}></Route>
+        <Route path="/fabric" element={<TechniqueLanding />}></Route>
+      </Routes>
+      {/* <ProductListing />
+      <Footer /> */}
     </div>
   );
 }

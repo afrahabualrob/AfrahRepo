@@ -3,7 +3,7 @@ import FilterOption from "../FilterOption";
 import styles from "./style.module.css";
 import { Grid } from "@mui/material";
 
-const DialogProductSize = ({ sizes }) => {
+const DialogProductSize = ({ sizes=[1,2,3,4] }) => {
   const [selectedSize, setSelectedSize] = useState(0);
   const handleSize = (event, size) => {
         event.preventDefault();

@@ -46,7 +46,7 @@ const DialogCard = ({ productItem }) => {
               <p className={styles.price}>SGD {price}</p>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Rating rating={rating} />
+              <Rating rating={rating.rate} />
             </Grid>
           </Grid>
           <DialogDescription description={description} />

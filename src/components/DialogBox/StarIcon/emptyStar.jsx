@@ -10,6 +10,7 @@ const EmptyStar = () => {
           "invert(99%) sepia(3%) saturate(19%) hue-rotate(315deg) brightness(85%) contrast(87%)",
       }}
     />
+    
   );
 };
 

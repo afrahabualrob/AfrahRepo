@@ -1,0 +1,27 @@
+.resetFilterUnClicked,
+.resetFilterClicked,
+.filterWord {
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.resetFilterUnClicked,
+.resetFilterClicked {
+  cursor: pointer;
+}
+.resetFilterClicked {
+  color: rgba(255, 96, 8, 1);
+}
+
+.resetFilterUnClicked:hover,
+.resetFilterClicked:hover {
+  opacity: 0.5;
+
+
+}

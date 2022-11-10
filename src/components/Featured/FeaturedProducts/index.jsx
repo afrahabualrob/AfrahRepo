@@ -7,7 +7,7 @@ const FeaturedProducts = () => {
     {
       id: 1,
       title: "The Sideswept Dhoti + Bottom Line Grey (Silk)",
-      imgSrc: "./assets/images/item1.png",
+      image: "./assets/images/item1.png",
       price: 599.0,
       date: "10/7/2022",
       description:
@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
     {
       id: 2,
       title: "Pueraria Mirifica And Study Phyto Estrogens",
-      imgSrc: "./assets/images/item2.png",
+      image: "./assets/images/item2.png",
       price: 599.0,
       date: "10/6/2022",
       description: "An apple mobile which is nothing like apple",
@@ -58,7 +58,7 @@ const FeaturedProducts = () => {
     {
       id: 3,
       title: "Pueraria Mirifica And Study Phyto Estrogens",
-      imgSrc: "./assets/images/item3.png",
+      image: "./assets/images/item3.png",
       price: 599.0,
       date: "10/8/2022",
       description:
@@ -82,7 +82,7 @@ const FeaturedProducts = () => {
     {
       id: 4,
       title: "Pueraria Mirifica And Study Phyto Estrogens44",
-      imgSrc: "./assets/images/item4.png",
+      image: "./assets/images/item4.png",
       price: 599.0,
       date: "9/1/2022",
       description: "An apple mobile which is nothing like apple",
@@ -105,7 +105,7 @@ const FeaturedProducts = () => {
     {
       id: 5,
       title: "Pueraria Mirifica And Study Phyto Estrogens55",
-      imgSrc: "./assets/images/item5.png",
+      image: "./assets/images/item5.png",
       price: 599.0,
       date: "10/6/2022",
       description:
@@ -129,7 +129,7 @@ const FeaturedProducts = () => {
     {
       id: 6,
       title: "Pueraria Mirifica And Study Phyto Estrogens6",
-      imgSrc: "./assets/images/item6.png",
+      image: "./assets/images/item6.png",
       price: 599.0,
       date: "8/8/2022",
       description:
@@ -153,7 +153,7 @@ const FeaturedProducts = () => {
     {
       id: 7,
       title: "Pueraria Mirifica And Study Phyto Estrogens",
-      imgSrc: "./assets/images/item7.png",
+      image: "./assets/images/item7.png",
       price: 599.0,
       date: "10/9/2022",
       description:
@@ -177,7 +177,7 @@ const FeaturedProducts = () => {
     {
       id: 8,
       title: "Pueraria Mirifica And Study Phyto Estrogens",
-      imgSrc: "./assets/images/item8.png",
+      image: "./assets/images/item8.png",
       price: 599.0,
       date: "7/25/2022",
       description:

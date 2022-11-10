@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./style.module.css";
 import { FaAngleDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MenuItem = ({ menuItem }) => {
   return (
     <div className={styles.menuItem}>
-      <a href="#" className={styles.menuLink}>{menuItem}</a>
+      <Link to={menuItem} className={styles.menuLink}>
+        {menuItem}
+      </Link>
       <FaAngleDown className={styles.angleIcon} />
     </div>
   );

@@ -8,7 +8,7 @@ import NewLabel from "../ProductCard/NewLabel";
 import DialogBox from "../DialogBox";
 
 const ProductCard = ({ productItem }) => {
-  const { title, imgSrc, price, date } = productItem;
+  const { title, image, price, date = "1/11/2022" } = productItem;
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -19,10 +19,10 @@ const ProductCard = ({ productItem }) => {
     setOpen(false);
   };
   return (
-    <div className={styles.productCard_wrapper}>
+    <div className={styles.productCard_wrapper} key={title}>
       <div className={styles.imagePart}>
         <div className={styles.imageWrapper}>
-          <ProductImage imgSrc={imgSrc} title={title} />
+          <ProductImage imgSrc={image} title={title} />
           <NewLabel date={date} />
         </div>
         <div className={styles.ViewBtnWrapper}>
@@ -32,7 +32,11 @@ const ProductCard = ({ productItem }) => {
       <ProductTitle title={title} />
       <ProductPrice price={price} />
 
-      <DialogBox handleClose={handleClose} open={open} productItem={ productItem} />
+      <DialogBox
+        handleClose={handleClose}
+        open={open}
+        productItem={productItem}
+      />
     </div>
   );
 };
