@@ -15,32 +15,37 @@ const Nav1 = ({ filteredProducts, setFilteredProducts, allProducts }) => {
   const handleChange = (event) => {
     setFilter(event.target.value);
     console.log(filter1);
+    console.log("............................................")
+    console.log(filteredProducts)
   };
-  const filterAnPrice = () => {
-    console.log("HI");
+
+  // delete useEffect and write it as Arrow Function...
+  useEffect(() => {
     switch (filter1) {
       case "11": {
-        setFilteredProducts(allProducts);
+        setFilteredProducts(filteredProducts);
+        console.log(filteredProducts);
+
         break;
       }
 
       case "22": {
-        setFilteredProducts(allProducts.sort((a, b) => b.price - a.price));
+        setFilteredProducts(filteredProducts.sort((a, b) => b.price - a.price));
+        console.log(filteredProducts);
         break;
       }
 
       case "33": {
-        setFilteredProducts(allProducts.sort((a, b) => a.price - b.price));
+        setFilteredProducts(filteredProducts.sort((a, b) => a.price - b.price));
         console.log(filteredProducts);
 
         break;
       }
       default:
-      setFilteredProducts(allProducts);
+        setFilteredProducts(filteredProducts);
     }
-  };
+  }, [filter1]);
 
-  useEffect(() => filterAnPrice(), [filter1]);
   return (
     <Box className={styles.box}>
       <Container>

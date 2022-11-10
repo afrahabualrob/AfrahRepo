@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
+import { Grid, Container } from "@mui/material";
 
 const BackGround = ({ expandedItem }) => {
   const expandedItems = [
@@ -7,45 +8,63 @@ const BackGround = ({ expandedItem }) => {
       id: 1,
       name: "clothes",
       description: "This is a Cloths Category",
-      img: "https://cdn.xxl.thumbs.canstockphoto.com/different-clothes-on-a-white-background-sale-banner-illustration_csp80008522.jpg",
+      img: "https://www.shutterstock.com/image-photo/minimal-fashion-clothes-concept-female-600w-1411333679.jpg",
     },
     {
       id: 2,
       name: "others",
       description: "This is a Others Category",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhhDErYR0AwJRni-SR1NnF_73d7B8KGJoCA&usqp=CAU",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotaOCs6SXv2FbhdyVxH70iENWwkUWtgjQZg&usqp=CAU",
     },
     {
       id: 3,
       name: "women's clothing",
       description: "This is a women's clothing",
-      img: "https://st4.depositphotos.com/4278641/27319/i/1600/depositphotos_273197232-stock-photo-fashion-clothing-with-seashells-and.jpg",
+      img: "https://siteimages.simplified.co/background-remover/background-remover-women-clothes-image-4.png",
     },
     {
       id: 4,
       name: "men's clothing",
       description: "This is a men's clothing",
-      img: "https://img.freepik.com/premium-photo/men-s-clothes-with-brown-shoes-blue-shirt-sunglasses-white-background-men-s-casual-outfits-man-clothing-set-flat-lay-men-s-fashion-casual-outfits-accessories_11358-1560.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mytNwT-TOnxnE6TizIKOjN-UzEBZQAMFC2zV5-7rCCnKOee-O-ZqgmsghJGoodrYFm4&usqp=CAU",
     },
     {
       id: 5,
       name: "jewelery",
       description: "This is a jewelery",
-      img: "https://st3.depositphotos.com/6010472/18845/i/1600/depositphotos_188455071-stock-photo-flat-lay-female-fashion-accessories.jpg",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0JKY6mpWS-JnfDiHNc_zxzMK6bRUiamMHqNGn9rBrOUwXN3gotHJ6HT-1MC-4DcWm0s&usqp=CAU",
     },
     {
       id: 6,
       name: "electronics",
       description: "This is a electronics",
-      img: "",
+      img: "https://thumbs.dreamstime.com/b/top-view-creative-flat-lay-photo-modern-workplace-laptop-top-view-laptop-background-copy-space-white-background-top-143791420.jpg",
     },
   ];
-//   const selected = expandedItems.filter((item) => item.name === expandedItem);
+  const selected = expandedItems.filter((item) => item.name === expandedItem);
   return (
-    <>
-      {/* {console.log(selected[0].id)} */}
-     
-    </>
+    <div className={styles.headerSection}>
+      <Container maxWidth="lg">
+        <Grid container alignItems="center" justifyContent="space-between">
+          <Grid item xs={6}>
+            <h2 className={styles.title}>{selected[0]?.name}</h2>
+            <p className={styles.description}>{selected[0]?.description}</p>
+          </Grid>
+          <Grid item xs="auto">
+            <img
+              src={selected[0]?.img}
+              alt={selected[0]?.name}
+              className={styles.background}
+            />
+          </Grid>
+        </Grid>
+
+        {/* <div
+        style={{ backgroundColor: `url(${selected[0]?.img})` }}
+        className={styles.background}
+      ></div> */}
+      </Container>
+    </div>
   );
 };
 

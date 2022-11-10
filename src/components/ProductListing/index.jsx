@@ -542,11 +542,11 @@ const ProductListing = () => {
     },
   ];
   const [filteredProducts, setFilteredProducts] = useState(productsJson);
-  const [expandedItem, setExpandedItem] = useState("cloths");
+  const [expandedItem, setExpandedItem] = useState("clothes");
 
   return (
     <div>
-      {/* <BackGround expandedItem={expandedItem} /> */}
+      <BackGround expandedItem={expandedItem} />
       <Nav1
         filteredProducts={filteredProducts}
         setFilteredProducts={setFilteredProducts}
