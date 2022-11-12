@@ -542,7 +542,7 @@ const ProductListing = () => {
     },
   ];
   const [filteredProducts, setFilteredProducts] = useState(productsJson);
-  const [expandedItem, setExpandedItem] = useState("clothes");
+  const [expandedItem, setExpandedItem] = useState("Mater shops");
 
   return (
     <div>
@@ -551,6 +551,7 @@ const ProductListing = () => {
         filteredProducts={filteredProducts}
         setFilteredProducts={setFilteredProducts}
         allProducts={productsJson}
+        expandedItem={expandedItem}
       />
       <Container sx={{ mt: 4 }}>
         <Grid container spacing={4}>

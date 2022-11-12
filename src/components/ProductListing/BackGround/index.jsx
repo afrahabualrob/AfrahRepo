@@ -5,10 +5,16 @@ import { Grid, Container } from "@mui/material";
 const BackGround = ({ expandedItem }) => {
   const expandedItems = [
     {
+      id: 0,
+      name: "Mater shops",
+      description: "This is one of top eCommerce platforms online",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxtMmzBqpUJagKwBZ5C4kVF1NJht0VlMnfWqAheU65Jnn74Wic4_b8-hxavbgRmQIJGY&usqp=CAU",
+    },
+    {
       id: 1,
       name: "clothes",
       description: "This is a Cloths Category",
-      img: "https://www.shutterstock.com/image-photo/minimal-fashion-clothes-concept-female-600w-1411333679.jpg",
+      img: "https://p0.piqsels.com/preview/207/312/923/school-sale-clothes-shopping-thumbnail.jpg",
     },
     {
       id: 2,

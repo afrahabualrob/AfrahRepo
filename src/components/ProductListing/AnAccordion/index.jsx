@@ -51,7 +51,7 @@ const AnAccordion = ({
           expandIcon=<KeyboardArrowUpIcon />
           onClick={(event) => {
             setExpanded(!expanded);
-            setExpandedItem(item)
+            if (expanded) setExpandedItem(item);
           }}
         >
           {item}

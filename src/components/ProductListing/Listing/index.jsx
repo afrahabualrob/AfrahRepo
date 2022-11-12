@@ -67,7 +67,7 @@ const Listing = ({
         setSelectedColor={setSelectedColor}
         setSelectedCategory={setSelectedCategory}
       />
-      {console.log("/////////////////")}
+      {console.log("...................................")}
       {console.log(filteredProducts)}
     </div>
   );

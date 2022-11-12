@@ -4,7 +4,12 @@ import styles from "./style.module.css";
 import { Container, Box, Grid, FormControl, Select } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Nav1 = ({ filteredProducts, setFilteredProducts, allProducts }) => {
+const Nav1 = ({
+  filteredProducts,
+  setFilteredProducts,
+  allProducts,
+  expandedItem,
+}) => {
   const filteredCategories = [
     { id: 11, title: "All" },
     { id: 22, title: "High to Low" },
@@ -15,8 +20,8 @@ const Nav1 = ({ filteredProducts, setFilteredProducts, allProducts }) => {
   const handleChange = (event) => {
     setFilter(event.target.value);
     console.log(filter1);
-    console.log("............................................")
-    console.log(filteredProducts)
+    console.log("............................................");
+    console.log(filteredProducts);
   };
 
   // delete useEffect and write it as Arrow Function...
@@ -51,7 +56,7 @@ const Nav1 = ({ filteredProducts, setFilteredProducts, allProducts }) => {
       <Container>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item xs="auto">
-            <span className="womenWord">women</span>
+            <span className="womenWord">{expandedItem}</span>
           </Grid>
           <Grid container item xs="auto" alignItems="center" spacing={1}>
             <Grid item>
