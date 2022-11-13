@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 import { Container, Box, Grid, FormControl, Select } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Nav1 = ({
+const ProductListingNav = ({
   filteredProducts,
   setFilteredProducts,
   allProducts,
@@ -15,41 +15,43 @@ const Nav1 = ({
     { id: 22, title: "High to Low" },
     { id: 33, title: "Low to High" },
   ];
-  const [filter1, setFilter] = useState(filteredCategories[0].id);
 
-  const handleChange = (event) => {
-    setFilter(event.target.value);
-    console.log(filter1);
-    console.log("............................................");
-    console.log(filteredProducts);
+  const [selectedSizeFilter, setSelectedSizeFilter] = useState(
+    filteredCategories[0].id
+  );
+
+  const handleSelectedSizeChange = (event) => {
+    setSelectedSizeFilter(event.target.value);
   };
 
   // delete useEffect and write it as Arrow Function...
   useEffect(() => {
-    switch (filter1) {
-      case "11": {
-        setFilteredProducts(filteredProducts);
-        console.log(filteredProducts);
+    sizeFiltration();
+  }, [selectedSizeFilter]);
+
+  const sizeFiltration = () => {
+    switch (selectedSizeFilter) {
+      case "11":
+        setFilteredProducts([...filteredProducts.sort((a, b) => a.id - b.id)]);
+        break;
+
+      case "22":
+        setFilteredProducts([
+          ...filteredProducts.sort((a, b) => b.price - a.price),
+        ]);
 
         break;
-      }
 
-      case "22": {
-        setFilteredProducts(filteredProducts.sort((a, b) => b.price - a.price));
-        console.log(filteredProducts);
+      case "33":
+        setFilteredProducts([
+          ...filteredProducts.sort((a, b) => a.price - b.price),
+        ]);
         break;
-      }
 
-      case "33": {
-        setFilteredProducts(filteredProducts.sort((a, b) => a.price - b.price));
-        console.log(filteredProducts);
-
-        break;
-      }
       default:
-        setFilteredProducts(filteredProducts);
+        setFilteredProducts([...filteredProducts]);
     }
-  }, [filter1]);
+  };
 
   return (
     <Box className={styles.box}>
@@ -69,11 +71,9 @@ const Nav1 = ({
               >
                 <Select
                   native
-                  // defaultValue={0}
                   IconComponent={ExpandMoreIcon}
                   className={styles.select}
-                  // value={filter1}
-                  onChange={handleChange}
+                  onChange={handleSelectedSizeChange}
                   displayEmpty
                   inputProps={{ "aria-label": "filtered" }}
                 >
@@ -96,4 +96,4 @@ const Nav1 = ({
   );
 };
 
-export default Nav1;
+export default ProductListingNav;

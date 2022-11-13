@@ -21,17 +21,17 @@ const AnAccordion = ({
 }) => {
   const [expanded, setExpanded] = useState(true);
 
-  const fun = () => {
-    if (selectedCategory === "reset" || selectedCategory === "")
-      setFilteredProducts(allProducts);
-    else {
-      setFilteredProducts(
-        allProducts.filter((product) => product.category === selectedCategory)
-      );
-    }
-  };
+  // const fun = () => {
+  //   if (selectedCategory === "reset" || selectedCategory === "")
+  //     setFilteredProducts(allProducts);
+  //   else {
+  //     setFilteredProducts(
+  //       allProducts.filter((product) => product.category === selectedCategory)
+  //     );
+  //   }
+  // };
 
-  useMemo(() => fun(), [selectedCategory]);
+  // useMemo(() => fun(), [selectedCategory]);
   const handleCategory = (e, categoryName) => {
     setSelectedCategory(categoryName);
     if (selectedCategory === "reset" || selectedCategory === "")

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav1 from "./Nav1";
+import ProductListingNav from "./ProductListingNav";
 import BackGround from "./BackGround";
 import Listing from "./Listing";
 import Products from "./Products";
@@ -547,7 +547,7 @@ const ProductListing = () => {
   return (
     <div>
       <BackGround expandedItem={expandedItem} />
-      <Nav1
+      <ProductListingNav
         filteredProducts={filteredProducts}
         setFilteredProducts={setFilteredProducts}
         allProducts={productsJson}
