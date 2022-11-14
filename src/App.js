@@ -7,6 +7,7 @@ import TechniqueLanding from "./components/Pages/TechniqueLanding";
 import Footer from "./components/Footer";
 import ProductListing from "./components/ProductListing";
 import "./App.css";
+import React from "react";
 
 function App() {
   return (
