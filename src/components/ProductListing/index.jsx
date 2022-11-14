@@ -33,6 +33,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "gray",
+      date: "11-11-2022",
     },
     {
       id: 2,
@@ -61,7 +62,9 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "Gainsboro",
+      date: "10-10-2022",
     },
+
     {
       id: 3,
       title: "Mens Cotton Jacket",
@@ -88,6 +91,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "Beige",
+      date: "11-10-2022",
     },
     {
       id: 4,
@@ -115,6 +119,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "gray",
+      date: "11-11-2022",
     },
     {
       id: 5,
@@ -143,6 +148,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "Silver",
+      date: "12-11-2022",
     },
     {
       id: 6,
@@ -170,6 +176,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "Silver",
+      date: "13-11-2022",
     },
     {
       id: 7,
@@ -197,6 +204,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "Silver",
+      date: "20-9-2022",
     },
     {
       id: 8,
@@ -210,7 +218,21 @@ const ProductListing = () => {
         rate: 1.9,
         count: 100,
       },
+      images: [
+        "https://dummyjson.com/image/i/products/20/1.jpg",
+        "https://dummyjson.com/image/i/products/20/2.jpg",
+        "https://dummyjson.com/image/i/products/20/3.jpg",
+        "https://dummyjson.com/image/i/products/20/4.jpg",
+        "https://dummyjson.com/image/i/products/20/thumbnail.jpg",
+      ],
+      sizes: [1, 2, 3, 4],
+      details: [
+        { subTitle: "artisan employment", info: "88 jobs" },
+        { subTitle: "partnership", info: "Randall Armstrong" },
+        { subTitle: "In collab:", info: "Augusta Mendoza" },
+      ],
       color: "PaleGoldenRod",
+      date: "13-11-2022",
     },
     {
       id: 9,
@@ -238,6 +260,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "8-20-2022",
     },
     {
       id: 10,
@@ -265,6 +288,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "10-17-2022",
     },
     {
       id: 11,
@@ -293,6 +317,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "11-13-2022",
     },
     {
       id: 12,
@@ -321,6 +346,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "11-13-2022",
     },
     {
       id: 13,
@@ -348,6 +374,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "10-10-2022",
     },
     {
       id: 14,
@@ -376,6 +403,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "DarkSlateGrey",
+      date: "11-3-2022",
     },
     {
       id: 15,
@@ -403,6 +431,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "RebeccaPurple",
+      date: "11-11-2022",
     },
     {
       id: 16,
@@ -431,6 +460,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "gray",
+      date: "9-22-2022",
     },
     {
       id: 17,
@@ -458,6 +488,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "MidnightBlue",
+      date: "11-13-2022",
     },
     {
       id: 18,
@@ -485,6 +516,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "white",
+      date: "11-13-2022",
     },
     {
       id: 19,
@@ -512,6 +544,7 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "IndianRed",
+      date: "10-11-2022",
     },
     {
       id: 20,
@@ -539,11 +572,43 @@ const ProductListing = () => {
         { subTitle: "In collab:", info: "Augusta Mendoza" },
       ],
       color: "RebeccaPurple",
+      date: "11-13-2022",
     },
   ];
+
+  const filteredCategories = [
+    { id: 11, title: "All" },
+    { id: 22, title: "High to Low" },
+    { id: 33, title: "Low to High" },
+  ];
+
   const [filteredProducts, setFilteredProducts] = useState(productsJson);
   const [expandedItem, setExpandedItem] = useState("Mater shops");
+  const [selectedSizeFilter, setSelectedSizeFilter] = useState(filteredCategories[0].id);
 
+  const sizeFiltration = (filteredProducts) => {
+    switch (selectedSizeFilter) {
+      case "11":
+        setFilteredProducts([...filteredProducts.sort((a, b) => a.id - b.id)]);
+        break;
+
+      case "22":
+        setFilteredProducts([
+          ...filteredProducts.sort((a, b) => b.price - a.price),
+        ]);
+
+        break;
+
+      case "33":
+        setFilteredProducts([
+          ...filteredProducts.sort((a, b) => a.price - b.price),
+        ]);
+        break;
+
+      default:
+        setFilteredProducts([...filteredProducts]);
+    }
+  };
   return (
     <div>
       <BackGround expandedItem={expandedItem} />
@@ -552,7 +617,12 @@ const ProductListing = () => {
         setFilteredProducts={setFilteredProducts}
         allProducts={productsJson}
         expandedItem={expandedItem}
+        selectedSizeFilter={selectedSizeFilter}
+        setSelectedSizeFilter={setSelectedSizeFilter}
+        sizeFiltration={sizeFiltration}
+        filteredCategories={filteredCategories}
       />
+      
       <Container sx={{ mt: 4 }}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={3}>
@@ -561,6 +631,7 @@ const ProductListing = () => {
               setFilteredProducts={setFilteredProducts}
               allProducts={productsJson}
               setExpandedItem={setExpandedItem}
+              sizeFiltration={sizeFiltration}
             />
           </Grid>
           <Grid item xs={12} md={9}>

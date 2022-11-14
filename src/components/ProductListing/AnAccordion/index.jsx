@@ -18,6 +18,7 @@ const AnAccordion = ({
   selectedCategory,
   setSelectedCategory,
   setExpandedItem,
+  sizeFiltration,
 }) => {
   const [expanded, setExpanded] = useState(true);
 
@@ -32,8 +33,10 @@ const AnAccordion = ({
   // };
 
   // useMemo(() => fun(), [selectedCategory]);
+
   const handleCategory = (e, categoryName) => {
     setSelectedCategory(categoryName);
+    console.log("Category ", categoryName);
     if (selectedCategory === "reset" || selectedCategory === "")
       setFilteredProducts(allProducts);
     else {
@@ -43,6 +46,14 @@ const AnAccordion = ({
       setExpandedItem(categoryName);
     }
   };
+
+  useEffect(() => {
+    // setFilteredProducts(
+      
+    // );
+    sizeFiltration(allProducts.filter((product) => product.category === selectedCategory));
+  }, [selectedCategory]);
+
   return (
     <>
       <Accordion className={styles.accordion}>

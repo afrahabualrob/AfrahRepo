@@ -9,6 +9,7 @@ const Listing = ({
   setFilteredProducts,
   allProducts,
   setExpandedItem,
+  sizeFiltration,
 }) => {
   const mainCategories = ["clothes", "others"];
   const allCategories = [
@@ -57,6 +58,7 @@ const Listing = ({
             (categoryItem) => categoryItem.categoryTitle === mainCategory
           )}
           setExpandedItem={setExpandedItem}
+          sizeFiltration={sizeFiltration}
         />
       ))}
       <Colors
@@ -66,9 +68,8 @@ const Listing = ({
         selectedColor={selectedColor}
         setSelectedColor={setSelectedColor}
         setSelectedCategory={setSelectedCategory}
+        sizeFiltration={sizeFiltration}
       />
-      {console.log("...................................")}
-      {console.log(filteredProducts)}
     </div>
   );
 };

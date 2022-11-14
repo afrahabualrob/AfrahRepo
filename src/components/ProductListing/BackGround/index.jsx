@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import { Grid, Container } from "@mui/material";
 
@@ -47,19 +47,27 @@ const BackGround = ({ expandedItem }) => {
       img: "https://thumbs.dreamstime.com/b/top-view-creative-flat-lay-photo-modern-workplace-laptop-top-view-laptop-background-copy-space-white-background-top-143791420.jpg",
     },
   ];
-  const selected = expandedItems.filter((item) => item.name === expandedItem);
+  const [s, setS] = useState("");
+  useEffect(() => {
+    setS(expandedItems.find((item) => item.name === expandedItem));
+    console.log(s)
+    
+},[expandedItem])
+ 
   return (
     <div className={styles.headerSection}>
       <Container maxWidth="lg">
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item xs={6}>
-            <h2 className={styles.title}>{selected[0]?.name}</h2>
-            <p className={styles.description}>{selected[0]?.description}</p>
+            <h2 className={styles.title}>{s?.name}</h2>
+            <p className={styles.description}>
+              {s?.description}
+            </p>
           </Grid>
           <Grid item xs="auto">
             <img
-              src={selected[0]?.img}
-              alt={selected[0]?.name}
+              src={s?.img}
+              alt={s?.name}
               className={styles.background}
             />
           </Grid>

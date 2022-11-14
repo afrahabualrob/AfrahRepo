@@ -10,6 +10,7 @@ const Colors = ({
   setSelectedColor,
   setSelectedCategory,
   selectedCategory,
+  sizeFiltration 
 }) => {
   const colorsJson = [
     { id: 1, name: "gray", code: "#6e9e9e" },
@@ -37,6 +38,7 @@ const Colors = ({
       setFilteredProducts(
         allProducts.filter((product) => product.color === selectedColor)
       );
+        // sizeFiltration();
   }, [selectedColor]);
 
   return (

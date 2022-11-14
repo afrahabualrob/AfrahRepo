@@ -9,17 +9,11 @@ const ProductListingNav = ({
   setFilteredProducts,
   allProducts,
   expandedItem,
+  selectedSizeFilter,
+  setSelectedSizeFilter,
+  sizeFiltration,
+  filteredCategories
 }) => {
-  const filteredCategories = [
-    { id: 11, title: "All" },
-    { id: 22, title: "High to Low" },
-    { id: 33, title: "Low to High" },
-  ];
-
-  const [selectedSizeFilter, setSelectedSizeFilter] = useState(
-    filteredCategories[0].id
-  );
-
   const handleSelectedSizeChange = (event) => {
     setSelectedSizeFilter(event.target.value);
   };
@@ -28,30 +22,6 @@ const ProductListingNav = ({
   useEffect(() => {
     sizeFiltration();
   }, [selectedSizeFilter]);
-
-  const sizeFiltration = () => {
-    switch (selectedSizeFilter) {
-      case "11":
-        setFilteredProducts([...filteredProducts.sort((a, b) => a.id - b.id)]);
-        break;
-
-      case "22":
-        setFilteredProducts([
-          ...filteredProducts.sort((a, b) => b.price - a.price),
-        ]);
-
-        break;
-
-      case "33":
-        setFilteredProducts([
-          ...filteredProducts.sort((a, b) => a.price - b.price),
-        ]);
-        break;
-
-      default:
-        setFilteredProducts([...filteredProducts]);
-    }
-  };
 
   return (
     <Box className={styles.box}>
