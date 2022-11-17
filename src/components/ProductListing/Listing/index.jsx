@@ -9,7 +9,7 @@ const Listing = ({
   setFilteredProducts,
   allProducts,
   setExpandedItem,
-  sizeFiltration,
+  priceFiltration,
 }) => {
   const mainCategories = ["clothes", "others"];
   const allCategories = [
@@ -36,7 +36,7 @@ const Listing = ({
         >
           <span
             className={
-              selectedCategory === "reset"
+              selectedCategory === "reset" && selectedColor === ""
                 ? styles.resetFilterClicked
                 : styles.resetFilterUnClicked
             }
@@ -47,10 +47,10 @@ const Listing = ({
       </Grid>
       {mainCategories.map((mainCategory) => (
         <AnAccordion
-          filteredProducts={filteredProducts}
-          setFilteredProducts={setFilteredProducts}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
+          selectedColor={selectedColor}
+          setSelectedColor={setSelectedColor}
           allProducts={allProducts}
           key={mainCategory}
           item={mainCategory}
@@ -58,17 +58,20 @@ const Listing = ({
             (categoryItem) => categoryItem.categoryTitle === mainCategory
           )}
           setExpandedItem={setExpandedItem}
-          sizeFiltration={sizeFiltration}
+          priceFiltration={priceFiltration}
         />
       ))}
       <Colors
-        filteredProducts={filteredProducts}
-        setFilteredProducts={setFilteredProducts}
-        allProducts={allProducts}
+        // allProducts={allProducts}
         selectedColor={selectedColor}
         setSelectedColor={setSelectedColor}
-        setSelectedCategory={setSelectedCategory}
-        sizeFiltration={sizeFiltration}
+        priceFiltration={priceFiltration}
+        setExpandedItem={setExpandedItem}
+        product111={
+          selectedColor.length === 0
+            ? allProducts
+            : allProducts.filter((product) => product.color === selectedColor)
+        }
       />
     </div>
   );

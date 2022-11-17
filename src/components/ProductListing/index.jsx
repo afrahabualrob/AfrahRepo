@@ -583,11 +583,13 @@ const ProductListing = () => {
   ];
 
   const [filteredProducts, setFilteredProducts] = useState(productsJson);
-  const [expandedItem, setExpandedItem] = useState("Mater shops");
-  const [selectedSizeFilter, setSelectedSizeFilter] = useState(filteredCategories[0].id);
+  const [expandedItem, setExpandedItem] = useState("Matter shops");
+  const [selectedPriceFilter, setSelectedPriceFilter] = useState(
+    filteredCategories[0].id
+  );
 
-  const sizeFiltration = (filteredProducts) => {
-    switch (selectedSizeFilter) {
+  const priceFiltration = (filteredProducts) => {
+    switch (selectedPriceFilter) {
       case "11":
         setFilteredProducts([...filteredProducts.sort((a, b) => a.id - b.id)]);
         break;
@@ -617,12 +619,12 @@ const ProductListing = () => {
         setFilteredProducts={setFilteredProducts}
         allProducts={productsJson}
         expandedItem={expandedItem}
-        selectedSizeFilter={selectedSizeFilter}
-        setSelectedSizeFilter={setSelectedSizeFilter}
-        sizeFiltration={sizeFiltration}
+        selectedPriceFilter={selectedPriceFilter}
+        setSelectedPriceFilter={setSelectedPriceFilter}
+        priceFiltration={priceFiltration}
         filteredCategories={filteredCategories}
       />
-      
+
       <Container sx={{ mt: 4 }}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={3}>
@@ -631,7 +633,7 @@ const ProductListing = () => {
               setFilteredProducts={setFilteredProducts}
               allProducts={productsJson}
               setExpandedItem={setExpandedItem}
-              sizeFiltration={sizeFiltration}
+              priceFiltration={priceFiltration}
             />
           </Grid>
           <Grid item xs={12} md={9}>

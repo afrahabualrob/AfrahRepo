@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   Accordion,
   AccordionDetails,
@@ -12,46 +12,30 @@ import styles from "./style.module.css";
 const AnAccordion = ({
   item,
   items,
-  filteredProducts,
-  setFilteredProducts,
   allProducts,
   selectedCategory,
   setSelectedCategory,
   setExpandedItem,
-  sizeFiltration,
+  priceFiltration,
+  selectedColor,
+  setSelectedColor,
 }) => {
   const [expanded, setExpanded] = useState(true);
 
-  // const fun = () => {
-  //   if (selectedCategory === "reset" || selectedCategory === "")
-  //     setFilteredProducts(allProducts);
-  //   else {
-  //     setFilteredProducts(
-  //       allProducts.filter((product) => product.category === selectedCategory)
-  //     );
-  //   }
-  // };
-
-  // useMemo(() => fun(), [selectedCategory]);
-
   const handleCategory = (e, categoryName) => {
     setSelectedCategory(categoryName);
-    console.log("Category ", categoryName);
-    if (selectedCategory === "reset" || selectedCategory === "")
-      setFilteredProducts(allProducts);
-    else {
-      setFilteredProducts(
-        allProducts.filter((product) => product.category === selectedCategory)
-      );
-      setExpandedItem(categoryName);
-    }
+    setSelectedColor("");
+    setExpandedItem(categoryName);
   };
 
   useEffect(() => {
-    // setFilteredProducts(
-      
-    // );
-    sizeFiltration(allProducts.filter((product) => product.category === selectedCategory));
+    if (selectedCategory === "reset") {
+      priceFiltration(allProducts);
+      setExpandedItem("Matter shops");
+    } else
+      priceFiltration(
+        allProducts.filter((product) => product.category === selectedCategory)
+      );
   }, [selectedCategory]);
 
   return (
@@ -59,7 +43,7 @@ const AnAccordion = ({
       <Accordion className={styles.accordion}>
         <AccordionSummary
           className={styles.categoryTitle}
-          expandIcon=<KeyboardArrowUpIcon />
+          expandIcon=<ExpandMoreIcon />
           onClick={(event) => {
             setExpanded(!expanded);
             if (expanded) setExpandedItem(item);
@@ -75,7 +59,7 @@ const AnAccordion = ({
                 <ListItemText
                   disableTypography
                   className={
-                    selectedCategory === categoryName
+                    selectedCategory === categoryName && selectedColor === ""
                       ? styles.selectedSubCategory
                       : styles.subCategory
                   }
@@ -83,7 +67,7 @@ const AnAccordion = ({
                 >
                   {categoryName}
                 </ListItemText>
-                {console.log(selectedCategory)}
+                {console.log("selectedCategory" + selectedCategory)}
               </ListItem>
             );
           })}

@@ -1,0 +1,18 @@
+.loading {
+  color: #33333a !important;
+  font-family: "ProximaNova-Semibold";
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.loading:hover {
+  background-color: rgb(238, 235, 235) !important;
+}
+
