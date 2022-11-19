@@ -62,12 +62,11 @@ const Listing = ({
         />
       ))}
       <Colors
-        // allProducts={allProducts}
         selectedColor={selectedColor}
         setSelectedColor={setSelectedColor}
         priceFiltration={priceFiltration}
         setExpandedItem={setExpandedItem}
-        product111={
+        productsSpecificColor={
           selectedColor.length === 0
             ? allProducts
             : allProducts.filter((product) => product.color === selectedColor)

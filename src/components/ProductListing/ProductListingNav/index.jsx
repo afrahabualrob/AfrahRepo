@@ -18,7 +18,6 @@ const ProductListingNav = ({
     setSelectedPriceFilter(event.target.value);
   };
 
-  // delete useEffect and write it as Arrow Function...
   useEffect(() => {
     priceFiltration(filteredProducts);
   }, [selectedPriceFilter]);
