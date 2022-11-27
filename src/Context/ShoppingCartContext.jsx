@@ -2,11 +2,6 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import ShoppingCart from "../components/ShoppingCart";
 import axios from "axios";
 
-// export const CartItem = {
-//   id,
-//   quantity
-// };
-
 const ShoppingCartContext = createContext(null);
 
 export const useShoppingCart = () => {
