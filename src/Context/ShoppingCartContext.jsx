@@ -61,7 +61,7 @@ export function ShoppingCartProvider({ children }) {
       }
     });
   };
-//decrease done
+  //decrease done
   const decreaseCartQuantity = (id) => {
     setCartItems(
       cartItems.map((item) => {
@@ -78,66 +78,10 @@ export function ShoppingCartProvider({ children }) {
 
     console.log(cartItems);
   };
+
   function getItemQuantity(id) {
     return cartItems.find((item) => item.id === id).quantity;
   }
-
-  // function decreaseCartQuantity(id) {
-  // console.log("id", id);
-  // console.log(getItemQuantity(id));
-  // let s;
-  // setCartItems(
-  //   cartItems.map((item) => {
-  //     if (item.id === id) s = item;
-  //     return {};
-  //   })
-  // );
-
-  // console.log(cartItems);
-  //   setCartItems((currItems) => {
-  //  let ss=(currItems.find((item) => item.id === id)?.quantity === 1)
-  //     return currItems.filter((item) => item.id !== id);
-  //   }
-  // else {
-  //   return currItems.map((item) => {
-  //     if (item.id === id) {
-  //       return { ...item, quantity: item.quantity - 1 };
-  //     } else {
-  //       return item;
-  //     }
-  //   });
-  // }
-  // });
-  // }
-  //   setCartItems((currItems) => {
-  //     if (currItems.find((item) => item.id === id)?.quantity === 1) {
-  //       return currItems.filter((item) => item.id !== id);
-  //     } else {
-  //       return currItems.map((item) => {
-  //         if (item.id === id) {
-  //           return { ...item, quantity: item.quantity - 1 };
-  //         } else {
-  //           return item;
-  //         }
-  //       });
-  //     }
-  //   });
-  // }
-
-  //**************** */
-  // setCartItems((currItems) => {
-  //   if (currItems.find((item) => item.id === id)?.quantity === 1) {
-  //     return currItems.filter((item) => item.id !== id);
-  //   } else {
-  //     return currItems.map((item) => {
-  //       if (item.id === id) {
-  //         return { ...item, quantity: item.quantity - 1 };
-  //       } else {
-  //         return item;
-  //       }
-  //     });
-  //   }
-  // });
 
   function removeFromCart(id) {
     setCartItems((currItems) => {
