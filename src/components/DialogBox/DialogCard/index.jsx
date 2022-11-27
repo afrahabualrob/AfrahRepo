@@ -53,7 +53,7 @@ const DialogCard = ({ productItem }) => {
           <DialogProductDetails details={details} />
           <DialogProductSize sizes={sizes} />
           <div>
-            <QuantitySection availableQuantity={availableQuantity} />
+            <QuantitySection id={id} availableQuantity={availableQuantity} />
           </div>
         </Grid>
       </Grid>

@@ -16,7 +16,7 @@ const DialogProductSize = ({ sizes=[1,2,3,4] }) => {
     <div className={styles.sizeWrapper}>
       <FilterOption title="size" />
       <Grid container justifyContent="space-between" alignItems="center">
-        <grid xs={6}>
+        <Grid xs={6}>
           <div>
             {sizes.map((size) => {
               const selectedSizeElement =
@@ -34,13 +34,13 @@ const DialogProductSize = ({ sizes=[1,2,3,4] }) => {
               );
             })}
           </div>
-        </grid>
-        <grid xs={6}>
+        </Grid>
+        <Grid xs={6}>
           {" "}
           <a href="#" className={styles.sizeGuidelines}>
             Size Guidelines
           </a>
-        </grid>
+        </Grid>
       </Grid>
 
       <span className={styles.modelInfo}>

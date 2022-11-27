@@ -1,0 +1,65 @@
+.emptyCart {
+  background-color: #f5f5f5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.description {
+  padding: 16px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #141414;
+}
+
+.emptyCart button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.shoppingBtn {
+  border: 2px solid #66cc99;
+  color: #66cc99;
+  background-color: transparent;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.shoppingBtn:hover {
+  box-shadow: 0 0 40px 40px #66cc99 inset;
+  color: #fff;
+}
+
+.loginBtn {
+  border: 2px solid #66cc99;
+  color: #fff;
+  background-color: #66cc99 !important;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.loginBtn:hover {
+  box-shadow: 0 0 40px 40px #fff inset;
+  color: #66cc99;
+}

@@ -3,18 +3,26 @@ import { Grid } from "@mui/material";
 import DialogProductQuantity from "../DialogProductQuantity";
 import styles from "./style.module.css";
 import FilterOption from "../FilterOption";
+import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 
-const QuantitySection = ({ availableQuantity }) => {
+const QuantitySection = ({ id, availableQuantity }) => {
+  let { increaseCartQuantity } = useShoppingCart();
+
   return (
     <div className={styles.quantityPart}>
       <FilterOption title="Quantity" />
 
-      <Grid container spacing={{ xs: 1}} alignItems="center">
+      <Grid container spacing={{ xs: 1 }} alignItems="center">
         <Grid item xs={6} sm={4}>
           <DialogProductQuantity availableQuantity={availableQuantity} />
         </Grid>
         <Grid item xs={6} sm={4}>
-          <button className={styles.addToCartBtn}>Add to cart</button>
+          <button
+            className={styles.addToCartBtn}
+            onClick={() => increaseCartQuantity(id)}
+          >
+            Add to cart
+          </button>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Grid container spacing={1} alignItems="center" justifyContent="left">

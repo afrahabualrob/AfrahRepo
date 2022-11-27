@@ -4,7 +4,7 @@ import BackGround from "./BackGround";
 import Listing from "./Listing";
 import Products from "./Products";
 import { Grid, Container } from "@mui/material";
-import axios from "axios";
+import { useShoppingCart } from "../../Context/ShoppingCartContext";
 
 const ProductListing = () => {
   const filteredCategories = [
@@ -12,27 +12,13 @@ const ProductListing = () => {
     { id: 22, title: "High to Low" },
     { id: 33, title: "Low to High" },
   ];
+  const { productsJson } = useShoppingCart();
 
-  const [productsJson, setProductJson] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([productsJson]);
   const [expandedItem, setExpandedItem] = useState("Matter shops");
   const [selectedPriceFilter, setSelectedPriceFilter] = useState(
     filteredCategories[0].id
   );
-
-  const getData = async () => {
-    await axios
-      .get("/productsJSON.json")
-      .then((res) => {
-        setProductJson(res.data);
-        setFilteredProducts(res.data);
-      })
-      .catch((err) => console.log(err));
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   const priceFiltration = (filteredProducts) => {
     switch (selectedPriceFilter) {

@@ -1,0 +1,29 @@
+.wrapper{
+    width: 50%;
+}
+
+.cardItemImage {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  /* width: 100%; */
+  align-items:  center;
+}
+
+.cardItemQuantity{
+font-size: .65rem;  
+
+}
+.cardItemTitle{
+max-width: auto;
+white-space: initial;
+word-wrap: break-word
+}
+
+.cardItemPrice{
+display: block;
+}
+
+.deleteBtn{
+    padding: 2px;
+}
