@@ -2,23 +2,15 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 
-const CartQuantity = ({ id }) => {
-  const { decreaseCartQuantity } = useShoppingCart();
-  const { increaseCartQuantity } = useShoppingCart();
-  const [quantity, setQuantity] = useState(0);
-
-  const handleMinus = () => {
-    setQuantity(quantity - 1);
-  };
-  const handlePlus = () => {
-    setQuantity(quantity + 1);
-  };
+const CartQuantity = ({ id,quantity }) => {
+  const { decreaseCartQuantity, increaseCartQuantity} = useShoppingCart();
 
   return (
     <div className={styles.wrapper}>
       <button
         className={styles.plusMinus}
         onClick={() => decreaseCartQuantity(id)}
+        disabled={quantity<=1}
       >
         -
       </button>

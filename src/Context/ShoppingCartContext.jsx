@@ -88,7 +88,7 @@ export function ShoppingCartProvider({ children }) {
       value={{
         openCart,
         closeCart,
-        // getItemQuantity,
+        getItemQuantity,
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,

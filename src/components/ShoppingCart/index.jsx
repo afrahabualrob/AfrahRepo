@@ -1,7 +1,4 @@
 import React from "react";
-// import { Offcanvas, Stack } from "react-bootstrap";
-// import { formatCurrency } from "../utilities/formatCurrency";
-
 import { Drawer } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import IconButton from "@mui/material/IconButton";
@@ -41,15 +38,6 @@ const ShoppingCart = ({ isOpen }) => {
       ))}
     </Drawer>
 
-    //       <div className="ms-auto fw-bold fs-5">
-    //         Total{" "}
-    //         {formatCurrency(
-    //           cartItems.reduce((total, cartItem) => {
-    //             const item = storeItems.find((i) => i.id === cartItem.id);
-    //             return total + (item?.price || 0) * cartItem.quantity;
-    //           }, 0)
-    //         )}
-    //       </div>
   );
 };
 
