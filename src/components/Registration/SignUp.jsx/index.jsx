@@ -6,7 +6,7 @@ import RegisterInput from "../RegisterInput";
 const SignUp = () => {
   return (
     <form>
-      <label for="chk" aria-hidden="true" className={styles.signUpLabel}>
+      <label htmlFor="chk" aria-hidden="true" className={styles.signUpLabel}>
         Sign up
       </label>
       <RegisterInput type="text" name="user name" />

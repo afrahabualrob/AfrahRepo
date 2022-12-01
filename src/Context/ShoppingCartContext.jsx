@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import ShoppingCart from "../components/ShoppingCart";
+import ShoppingCart from "../components/Cart/ShoppingCart";
 import axios from "axios";
 
 const ShoppingCartContext = createContext(null);
@@ -7,8 +7,9 @@ const ShoppingCartContext = createContext(null);
 export const useShoppingCart = () => {
   return useContext(ShoppingCartContext);
 };
+
 export function ShoppingCartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([{ id: 9, quantity: 2 }]);
   const [isOpen, setIsOpen] = useState(false);
   // const cartQuantity = cartItems.reduce(
   //   (quantity, item) => item.quantity + quantity,
@@ -21,10 +22,10 @@ export function ShoppingCartProvider({ children }) {
       .get("/productsJSON.json")
       .then((res) => {
         setProductJson(res.data);
-        // setFilteredProducts(res.data);
       })
       .catch((err) => console.log(err));
   };
+
   useEffect(() => {
     getData();
   }, []);
@@ -56,7 +57,7 @@ export function ShoppingCartProvider({ children }) {
       }
     });
   };
-  //decrease done
+
   const decreaseCartQuantity = (id) => {
     setCartItems(
       cartItems.map((item) => {
@@ -83,6 +84,7 @@ export function ShoppingCartProvider({ children }) {
       return currItems.filter((item) => item.id !== id);
     });
   }
+
   return (
     <ShoppingCartContext.Provider
       value={{

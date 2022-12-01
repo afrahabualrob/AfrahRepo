@@ -4,9 +4,12 @@ import DialogProductQuantity from "../DialogProductQuantity";
 import styles from "./style.module.css";
 import FilterOption from "../FilterOption";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
+import { useFavoriteContext } from "../../../Context/Favorites.jsx";
+
 
 const QuantitySection = ({ id, availableQuantity }) => {
   let { increaseCartQuantity } = useShoppingCart();
+  let { addToFavorites,favoriteProducts } = useFavoriteContext();
 
   return (
     <div className={styles.quantityPart}>
@@ -30,8 +33,14 @@ const QuantitySection = ({ id, availableQuantity }) => {
               <img src="/assets/icons/questionMark.svg" alt="Question Mark " />
             </Grid>
             <Grid item xs={10} sm={10}>
-              <button className={styles.AddToWishlistBtn}>
-                Add to wishlist
+              <button
+                className={styles.AddToWishlistBtn}
+                onClick={() => addToFavorites(id)}
+              >
+                {favoriteProducts.find((item) => item.id === id)
+                  ? "Remove "
+                  : "Add "}
+                to wishlist
               </button>
             </Grid>
           </Grid>

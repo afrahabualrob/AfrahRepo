@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 import MenuItems from "../Navbar/MenuItems";
-// import UserInformation from '../UserInformation'
 import NavbarIcons from "../Navbar/NavbarIcons";
 import BurgerMenu from "./BurgerMenu";
+import LoggedUser from "./LoggedUser";
+import { useCookies } from "react-cookie";
 
 const Navbar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const MenuStatus = isMenuOpened ? "openedMenu" : "closedMenu";
+  const [cookie, setCookie] = useCookies();
 
   return (
     <>
@@ -22,7 +24,11 @@ const Navbar = () => {
 
           <div className={styles.rightNavbar}>
             <div className={styles.rightNavbar_content}>
-              <button className={styles.loginBtn}>login</button>
+              {"Token" in cookie ? (
+                <LoggedUser />
+              ) : (
+                <button className={styles.loginBtn}>login</button>
+              )}
               <NavbarIcons />
               <BurgerMenu
                 isMenuOpened={isMenuOpened}

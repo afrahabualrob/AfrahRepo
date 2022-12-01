@@ -7,11 +7,10 @@ const Products = ({ products }) => {
   const [indexLength, setIndexLength] = useState(12);
 
   let shownProducts = products.filter((item, index) => index < indexLength);
-  console.log(shownProducts);
 
   return (
     <div style={{ marginBottom: "40px" }}>
-      <Grid container spacing={8} alignItems="center">
+      <Grid container spacing={8} alignItems=" stretch">
         {shownProducts.map((product) => (
           <Grid item xs={6} md={4} key={product.id}>
             <ProductCard productItem={product} />

@@ -1,0 +1,22 @@
+.journalTitle {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.882);
+  font-family: "VLNewParisHeadline";
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left !important;
+  line-height: 50px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 25px;
+}

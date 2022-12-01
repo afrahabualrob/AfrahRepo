@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Heading2 from "../Heading2";
 import VideoCard from "../RecommendedVideos/VideoCard";
-import styles from "./style.module.css";
 import ViewButton from "../Featured/ViewButton";
+import { Container, Grid } from "@mui/material";
 
 const RecommendedVideos = () => {
   const recommendedVideos = [
@@ -24,24 +24,70 @@ const RecommendedVideos = () => {
       image_src: "./assets/images/rec-video3.png",
       title: "Lorem ipsum dolor sit amet",
     },
+    {
+      id: 4,
+      video_link: "https://youtu.be/urSCa5nywJI",
+      image_src: "./assets/images/rec-video1.png",
+      title: "Jamdani",
+    },
+    {
+      id: 5,
+      video_link: "https://youtu.be/s1dRMZ61J8M",
+      image_src: "./assets/images/rec-video2.png",
+      title: "Lorem ipsum dolor sit amet",
+    },
+    {
+      id: 6,
+      video_link: "https://youtu.be/s1dRMZ61J8M",
+      image_src: "./assets/images/rec-video3.png",
+      title: "Lorem ipsum dolor sit amet",
+    },
+    {
+      id: 7,
+      video_link: "https://youtu.be/urSCa5nywJI",
+      image_src: "./assets/images/rec-video1.png",
+      title: "Jamdani",
+    },
+    {
+      id: 8,
+      video_link: "https://youtu.be/s1dRMZ61J8M",
+      image_src: "./assets/images/rec-video2.png",
+      title: "Lorem ipsum dolor sit amet",
+    },
   ];
+  const [shownVideo, setShownVideo] = useState(3);
+  let videos = recommendedVideos.filter((item, index) => index < shownVideo);
+
   return (
-    <section className={styles.container}>
+    <Container sx={{ padding: "30px 0" }}>
       <Heading2 heading="Recommended Videos" />
-      <div className={styles.videoCards}>
+      <Grid container alignItems="center" spacing={3}>
         {[] &&
-          recommendedVideos.map((recommendedVideo) => {
+          videos.map((recommendedVideo) => {
             return (
-              <div className={styles.videoCard}>
+              <Grid item xs={2} sm={4} md={4} key={recommendedVideo.id}>
                 <VideoCard video_info={recommendedVideo} />
-              </div>
+              </Grid>
             );
           })}
-      </div>
-      <div className={styles.showBtn}>
-        <ViewButton value="Show more" />
-      </div>
-    </section>
+      </Grid>
+      <Grid
+        container
+        justifyContent="center"
+        sx={{ marginTop: "24px" }}
+      >
+        <ViewButton
+          value={
+            shownVideo < recommendedVideos.length ? "Show more" : "show less"
+          }
+          onClick={() =>
+            shownVideo < recommendedVideos.length
+              ? setShownVideo(shownVideo + 3)
+              : setShownVideo(3)
+          }
+        />
+      </Grid>
+    </Container>
   );
 };
 

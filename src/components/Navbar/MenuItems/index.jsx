@@ -3,7 +3,7 @@ import MenuItem from "../MenuItem";
 import styles from "./style.module.css";
 
 const MenuItems = ({ listDirection, MenuStatus }) => {
-  const menuItems = ["shop", "fabric", "journal", "about"];
+  const menuItems = ["shop", "journal", "about"];
   return (
     <ul className={`${styles.menuList} ${styles[listDirection]}`}>
       {[] &&

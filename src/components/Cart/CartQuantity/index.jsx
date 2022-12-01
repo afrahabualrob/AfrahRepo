@@ -1,27 +1,45 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./style.module.css";
+import { Grid, Typography } from "@mui/material";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
-const CartQuantity = ({ id,quantity }) => {
-  const { decreaseCartQuantity, increaseCartQuantity} = useShoppingCart();
+const CartQuantity = ({ id, quantity }) => {
+  const { decreaseCartQuantity, increaseCartQuantity } = useShoppingCart();
 
   return (
-    <div className={styles.wrapper}>
-      <button
-        className={styles.plusMinus}
-        onClick={() => decreaseCartQuantity(id)}
-        disabled={quantity<=1}
-      >
-        -
-      </button>
-      <span className={styles.num}>{quantity} </span>
-      <button
-        className={styles.plusMinus}
-        onClick={() => increaseCartQuantity(id)}
-      >
-        +
-      </button>
-    </div>
+    <Grid
+      container
+      alignItems="center"
+      justifyContent="center"
+      className={styles.wrapper}
+    >
+      <Grid item xs={4}>
+        <button
+          className={styles.plusMinus}
+          onClick={() => decreaseCartQuantity(id)}
+          disabled={quantity <= 1}
+        >
+          <RemoveIcon />
+        </button>
+      </Grid>
+      <Grid item xs={4}>
+        <Typography variant="subtitle1" className={styles.quantityNumber}>
+          {quantity}
+        </Typography>
+      </Grid>
+      <Grid item xs={4}>
+        <button
+          className={styles.plusMinus}
+          onClick={() => increaseCartQuantity(id)}
+        >
+          <AddIcon />
+        </button>
+      </Grid>
+    </Grid>
+
+    // </div>
   );
 };
 

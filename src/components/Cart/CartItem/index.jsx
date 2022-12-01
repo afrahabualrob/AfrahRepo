@@ -23,14 +23,9 @@ const CartItem = ({ id, quantity }) => {
           <div className={styles.wrapper}>
             <img className={styles.cardItemImage} src={item.image} />
           </div>
-          <span className={styles.cardItemTitle}>
-            {item.title}
-            {quantity > 1 && (
-              <span className={styles.cardItemQuantity}>x{quantity}</span>
-            )}
-          </span>
+          <span className={styles.cardItemTitle}>{item.title}</span>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
           <CartQuantity id={id} quantity={quantity} />
         </Grid>
 

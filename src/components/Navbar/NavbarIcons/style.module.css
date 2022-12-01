@@ -1,5 +1,6 @@
 .navbar_icons {
   display: flex;
+  align-items: center;
 }
 
 .navbar_icon {

@@ -1,0 +1,20 @@
+.emptyFavorite1 {
+  font-size: 28px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color:#f44336;
+  text-align: center;
+}
+
+.emptyFavorite2 {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #888;
+  text-align: center;
+}
+
+.emptyFavoriteImage {
+  width: 50%;
+  padding: 20px 0;
+  display: block;
+  margin: auto;
+}

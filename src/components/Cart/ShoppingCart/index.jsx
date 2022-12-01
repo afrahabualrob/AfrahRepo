@@ -2,9 +2,9 @@ import React from "react";
 import { Drawer } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import IconButton from "@mui/material/IconButton";
-import { useShoppingCart } from "../../Context/ShoppingCartContext";
-import CartItem from "../Cart/CartItem";
-import EmptyCart from "../Shop/EmptyCart";
+import { useShoppingCart } from "../../../Context/ShoppingCartContext";
+import CartItem from "../CartItem";
+import EmptyCart from "../../Shop/EmptyCart";
 
 const ShoppingCart = ({ isOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();
@@ -37,7 +37,6 @@ const ShoppingCart = ({ isOpen }) => {
         <CartItem key={item.id} {...item} />
       ))}
     </Drawer>
-
   );
 };
 

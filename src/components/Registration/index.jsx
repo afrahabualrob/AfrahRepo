@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./style.module.css";
 import Login from "./Login.jsx";
 import SignUp from "./SignUp.jsx";
 import RegisterInput from "./RegisterInput";
 
 const Registration = () => {
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.main}>

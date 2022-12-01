@@ -5,15 +5,19 @@ import Routing from "./components/Routes/Routing";
 import { ShoppingCartProvider } from "./Context/ShoppingCartContext";
 import Registration from "./components/Registration";
 import ProductDetailsPage from "./components/Pages/ProductDetailsPage";
+import { FavoriteProvider } from "./Context/Favorites";
 
 function App() {
   return (
     <div className="App">
       <ShoppingCartProvider>
-        <Routing />
+        <FavoriteProvider>
+          <Routing />
+        </FavoriteProvider>
       </ShoppingCartProvider>
+
       <Registration />
-      <ProductDetailsPage/>
+      {/* <ProductDetailsPage/> */}
     </div>
   );
 }

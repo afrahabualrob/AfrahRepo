@@ -1,33 +1,19 @@
-input {
-  text-align: center;
-  border: 1px solid #6c757d;
-}
-
 .wrapper {
   border: 2px #dcd3d3 solid;
-  max-width: 150px;
-  height: 50px;
-  padding: 4px;
-  display: flex;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 1px;
 }
 
 .plusMinus {
-  height: 100%;
-  width: 30%;
   background: white;
   border: none;
-  font-size: 40px;
   color: #5f5fce;
+  width: 100%;
 }
 
-.num {
-  height: 100%;
-  width: 39%;
-  border: none;
-  font-size: 30px;
+.quantityNumber {
+  font-size: 3.3vw;
   text-align: center;
+  /* height: 100%; */
 }
