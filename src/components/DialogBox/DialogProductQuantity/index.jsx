@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./style.module.css";
 import { Grid } from "@mui/material";
 
-const DialogProductQuantity = ({ availableQuantity }) => {
-  const [quantity, setQuantity] = useState(1);
+const DialogProductQuantity = ({ availableQuantity,selectedQuantity, setSelectedQuantity }) => {
 
   const decreaseQuantity = () => {
-    setQuantity(quantity - 1);
+    setSelectedQuantity(selectedQuantity - 1);
   };
   const increaseQuantity = () => {
-    setQuantity(quantity + 1);
+    setSelectedQuantity(selectedQuantity + 1);
   };
 
   return (
@@ -19,20 +18,20 @@ const DialogProductQuantity = ({ availableQuantity }) => {
           <Grid item xs={4}>
             <button
               className={styles.quantityBtn}
-              disabled={quantity <= 1}
+              disabled={selectedQuantity <= 1}
               onClick={decreaseQuantity}
             >
               <img src="./assets/icons/minus.svg" alt="plus" />
             </button>
           </Grid>
           <Grid item xs={4}>
-            <label className={styles.quantityNumber}>{quantity}</label>
+            <label className={styles.quantityNumber}>{selectedQuantity}</label>
           </Grid>
-          <Grid item xs={4}  >
+          <Grid item xs={4}>
             <button
               className={styles.quantityBtn}
               onClick={increaseQuantity}
-              disabled={quantity >= availableQuantity}
+              disabled={selectedQuantity >= availableQuantity}
             >
               <img src="./assets/icons/plus2.svg" alt="plus" />
             </button>

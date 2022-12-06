@@ -1,12 +1,21 @@
 import React from "react";
-import NavDialog from "../../DialogBox/NavDialog";
-import DialogCard from "../../DialogBox/DialogCard";
+import LikesProduct from "../../ProductDetails/LikesProduct";
+import InstaProduct from "../../ProductDetails/InstaProduct";
+import CustomerReviews from "../../ProductDetails/CustomerReviews";
+import Quotation from "../../ProductDetails/Quotation";
+import Others from "../../ProductDetails/Others";
+import ProductDetails from "../../ProductDetails";
 
-const ProductDetailsPage = ({ open, handleClose, productItem }) => {
+const ProductDetailsPage = ({ open, handleClose }) => {
+
   return (
     <>
-          Afrah
-          {/* <DialogCard/> */}
+      <ProductDetails />
+      <Others />
+      <Quotation />
+      <InstaProduct />
+      <CustomerReviews />
+      <LikesProduct />
     </>
   );
 };

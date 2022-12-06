@@ -7,6 +7,7 @@ import axios from "axios";
 const LoggedUser = () => {
   const [cookie, setCookie] = useCookies();
   const [userData, setUserData] = useState({});
+ 
   useEffect(() => {
     axios
       .get("http://restapi.adequateshop.com/api/users/148307", {

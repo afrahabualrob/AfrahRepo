@@ -6,7 +6,11 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 const CartQuantity = ({ id, quantity }) => {
-  const { decreaseCartQuantity, increaseCartQuantity } = useShoppingCart();
+  const {
+    decreaseCartQuantity,
+    increaseCartQuantity,
+    getItemQuantity,
+  } = useShoppingCart();
 
   return (
     <Grid
@@ -32,7 +36,8 @@ const CartQuantity = ({ id, quantity }) => {
       <Grid item xs={4}>
         <button
           className={styles.plusMinus}
-          onClick={() => increaseCartQuantity(id)}
+          onClick={() => increaseCartQuantity(id, 1)}
+          disabled={quantity>=getItemQuantity(id)}
         >
           <AddIcon />
         </button>
