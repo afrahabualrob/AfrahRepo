@@ -6,7 +6,7 @@ import Quotation from "../../ProductDetails/Quotation";
 import Others from "../../ProductDetails/Others";
 import ProductDetails from "../../ProductDetails";
 
-const ProductDetailsPage = ({ open, handleClose }) => {
+const ProductDetailsPage = () => {
 
   return (
     <>

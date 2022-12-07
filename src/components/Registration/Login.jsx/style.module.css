@@ -17,3 +17,15 @@
 	transition: .8s ease-in-out;
 }
 
+.registerInput{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 10px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}

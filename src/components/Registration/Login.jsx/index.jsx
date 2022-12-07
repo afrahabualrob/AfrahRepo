@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import RegisterButton from "../RegisterButton";
 import { useCookies } from "react-cookie";
 import axios from "axios";
+import { Grid } from "@mui/material";
 
 const Login = () => {
   const emailRef = useRef(null);
@@ -26,8 +27,7 @@ const Login = () => {
       user
     );
 
-    if (res.data.data !== null) 
-    setUserToken("Token", res.data.data.Token);
+    if (res.data.data !== null) setUserToken("Token", res.data.data.Token);
 
     emailRef.current.value = "";
     passwordRef.current.value = "";
@@ -38,25 +38,30 @@ const Login = () => {
       <label htmlFor="chk" aria-hidden="true" className={styles.loginLabel}>
         Login
       </label>
-      <input
-        ref={emailRef}
-        type="text"
-        name="email"
-        placeholder="Email"
-        required
-        className={styles.registerInput}
-        onChange={handleEmailChange}
-      />
-      {/* <p>{ t.data.data.email}</p> */}
-      <input
-        ref={passwordRef}
-        type="password"
-        name="password"
-        placeholder="Password"
-        required
-        className={styles.registerInput}
-        onChange={handlePasswordChange}
-      />
+      <Grid container flexDirection="column" justifyContent="flex-end">
+        <Grid item xs={12}>
+          <input
+            ref={emailRef}
+            type="text"
+            name="email"
+            placeholder="Email"
+            required
+            className={styles.registerInput}
+            onChange={handleEmailChange}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <input
+            ref={passwordRef}
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+            className={styles.registerInput}
+            onChange={handlePasswordChange}
+          />
+        </Grid>
+      </Grid>
 
       <RegisterButton value="login" loginSubmission={loginSubmission} />
     </form>

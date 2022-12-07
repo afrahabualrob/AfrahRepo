@@ -11,10 +11,6 @@ export const useShoppingCart = () => {
 export function ShoppingCartProvider({ children }) {
   const [cartItems, setCartItems] = useState([{ id: 9, quantity: 2 }]);
   const [isOpen, setIsOpen] = useState(false);
-  // const cartQuantity = cartItems.reduce(
-  //   (quantity, item) => item.quantity + quantity,
-  //   0
-  // );
   const [productsJson, setProductJson] = useState([]);
 
   const getData = async () => {

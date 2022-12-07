@@ -6,6 +6,7 @@ import ProductListing from "../ProductListing";
 import Layout from "./Layout";
 import AboutPage from "../Pages/AboutPage";
 import JournalPage from "../Pages/JournalPage";
+import ProductDetailsPage from "../Pages/ProductDetailsPage";
 
 const Routing = () => {
   return (
@@ -17,6 +18,7 @@ const Routing = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="fabric" element={<TechniqueLanding />} />
           <Route path="journal" element={<JournalPage />} />
+          <Route path="/products/:productId" element={<ProductDetailsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

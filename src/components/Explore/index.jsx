@@ -4,6 +4,7 @@ import ExploreCard from "./ExploreCard";
 import styles from "./style.module.css";
 import ViewButton from "../Featured/ViewButton";
 import ExploreCards from "./ExploreCards";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   return (
@@ -12,7 +13,9 @@ const Explore = () => {
         <Heading2 heading="explore" />
         <ExploreCards />
         <div className={styles.exploreButton}>
-          <ViewButton value="See the journal" />
+          <Link to="journal">
+            <ViewButton value="See the journal" />
+          </Link>
         </div>
       </div>
     </div>

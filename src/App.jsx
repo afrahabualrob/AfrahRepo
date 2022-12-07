@@ -9,21 +9,14 @@ import { FavoriteProvider } from "./Context/Favorites";
 import Navbar2 from "./components/Navbar2";
 import Navbar from "./components/Navbar";
 
-
 function App() {
   return (
     <div className="App">
       <ShoppingCartProvider>
         <FavoriteProvider>
-          {/* <Routing />          
-          <Navbar2 /> */}
-<ProductDetailsPage/>
-
+          <Routing />
         </FavoriteProvider>
       </ShoppingCartProvider>
-
-      {/* <Registration /> */}
-      {/* <ProductDetailsPage/> */}
     </div>
   );
 }

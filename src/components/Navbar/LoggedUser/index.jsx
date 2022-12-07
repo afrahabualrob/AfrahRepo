@@ -20,10 +20,10 @@ const LoggedUser = () => {
 
   return (
     <Grid container alignItems="center" spacing={2} flexWrap="no-wrap">
-      <Grid item className={styles.userName} sx={{ border: "red solid 3px" }}>
+      <Grid item className={styles.userName} >
         Welcome, {userData.name}
       </Grid>
-      <Grid item sx={{ border: "#0c0c solid 3px" }}>
+      <Grid item>
         <Avatar alt={userData.name} src={userData.profilepicture} />
       </Grid>
     </Grid>
