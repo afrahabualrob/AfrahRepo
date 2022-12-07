@@ -11,7 +11,7 @@ const FeaturedProducts = () => {
 
   return (
     <div className={styles.featuredProducts}>
-      {[] &&
+      {featuredProducts.length>0 &&
         featuredProducts.map((product) => {
           const { id } = product;
           return (
