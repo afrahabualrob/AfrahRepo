@@ -88,7 +88,7 @@
       "price":55.99,
       "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       "category":"men's clothing",
-      "image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "image":"https://i.pinimg.com/564x/6a/c3/7b/6ac37bf02ec3aff2d53f90b73e83f53f.jpg",
       "rating":{
          "rate":4.7,
          "count":500
@@ -129,7 +129,7 @@
       "price":15.99,
       "description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
       "category":"men's clothing",
-      "image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "image":"https://i.pinimg.com/564x/06/45/2f/06452fe806c28a3c483c33ef84a752b8.jpg",
       "rating":{
          "rate":2.1,
          "count":430
@@ -293,7 +293,7 @@
       "price":10.99,
       "description":"Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
       "category":"jewelery",
-      "image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "image":"https://i.pinimg.com/236x/ce/2c/80/ce2c8056e85aa8ea47f5ed54b4f0922a.jpg",
       "rating":{
          "rate":1.9,
          "count":100
@@ -334,7 +334,7 @@
       "price":64,
       "description":"USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
       "category":"electronics",
-      "image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "image":"https://i.pinimg.com/236x/70/f0/76/70f07649bf67391b05009b638274f943.jpg",
       "rating":{
          "rate":3.3,
          "count":203
@@ -535,11 +535,11 @@
    },
    {
       "id":14,
-      "title":"Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "title":"Headphone  ",
       "price":999.99,
       "description":"49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
       "category":"electronics",
-      "image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "image":"https://i.pinimg.com/564x/80/56/86/805686ec98218602de18e088f8155d1a.jpg",
       "rating":{
          "rate":2.2,
          "count":140
@@ -661,7 +661,7 @@
       "price":39.99,
       "description":"Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
       "category":"women's clothing",
-      "image":"./assets/images/item3.png",      
+      "image":"https://i.pinimg.com/564x/52/e0/73/52e073de998c0ac1b7785a5c1f7ea643.jpg",      
       "rating":{
          "rate":3.8,
          "count":679
@@ -702,7 +702,8 @@
       "price":9.85,
       "description":"95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
       "category":"women's clothing",
- "image":"./assets/images/item4.png",      "rating":{
+      "image":"https://i.pinimg.com/564x/22/63/28/226328459ce06704e99f7e7a5dad039f.jpg",      
+      "rating":{
          "rate":4.7,
          "count":130
       },
@@ -742,7 +743,7 @@
       "price":7.95,
       "description":"100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
       "category":"women's clothing",
-       "image":"./assets/images/item5.png",
+       "image":"https://i.pinimg.com/564x/34/b3/97/34b397cbdd23f916328951b23820b7bc.jpg",
       "rating":{
          "rate":4.5,
          "count":146

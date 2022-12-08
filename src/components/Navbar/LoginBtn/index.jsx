@@ -19,17 +19,7 @@ const LoginBtn = () => {
   return (
     <>
       {"Token" in cookie ? (
-        <>
-          <LoggedUser />{" "}
-          <Button
-            variant="outlined"
-            size="small"
-            className={styles.logoutBtn}
-            onClick={handleClickOpen}
-          >
-            Logout
-          </Button>
-        </>
+        <LoggedUser />
       ) : (
         <button className={styles.loginBtn} onClick={handleClickOpen}>
           login
@@ -39,19 +29,6 @@ const LoginBtn = () => {
         <DialogContent>
           <Registration />
         </DialogContent>
-        {/* <DialogActions>
-          <Grid container justifyContent="center">
-            <Grid item>
-              <Button onClick={handleClose}
-                type="button"
-                color="primary"
-                className="form__custom-button"
-              >
-                Log in
-              </Button>
-            </Grid>
-          </Grid>
-        </DialogActions> */}
       </Dialog>
     </>
   );

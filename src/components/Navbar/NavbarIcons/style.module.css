@@ -1,11 +1,6 @@
-.navbar_icons {
-  display: flex;
-  align-items: center;
-}
-
 .navbar_icon {
   color: #33333a;
   font-size: 20px;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
   font-weight: lighter;
 }

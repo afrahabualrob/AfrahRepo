@@ -2,18 +2,19 @@ import React from "react";
 import styles from "./style.module.css";
 import Cart from "../../Cart";
 import HeartIcon from "./HeartIcon";
+import { Grid } from "@mui/material";
 
 const NavbarIcons = () => {
   return (
-    <div className={styles.navbar_icons}>
-      <div className={styles.navbar_icon}>
+    <Grid container spacing={1}>
+      <Grid item>
         <HeartIcon />
-      </div>
+      </Grid>
 
-      <div className={styles.navbar_icon}>
+      <Grid item>
         <Cart />
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 };
 

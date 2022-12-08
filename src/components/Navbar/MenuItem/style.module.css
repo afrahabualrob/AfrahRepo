@@ -1,9 +1,10 @@
 .menuItem {
   display: flex;
   align-items: center;
-  padding: 10px 0;
   width: 100%;
+  display: block;
 }
+
 .menuLink {
   opacity: 1;
   color: rgba(51, 51, 58, 1);
@@ -17,19 +18,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.angleIcon {
-  color: rgba(0, 0, 0, 1);
-  opacity: 1;
-  font-size: 14px;
-  padding-left: 4px;
-}
+
 .menuLink:hover {
   color: #888;
 }
-@media only screen and (max-width: 768px) {
-  .angleIcon {
-    opacity: 0;
-  }
+@media only screen and (max-width: 899px) {
   .menuItem {
     background-color: transparent;
     transition: all 0.7s ease-in;
@@ -43,8 +36,9 @@
   .menuLink {
     color: #fff;
     font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    display: block;
-    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 500;
   }
 }

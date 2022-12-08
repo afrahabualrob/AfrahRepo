@@ -8,6 +8,7 @@ import EmptyCart from "../../Shop/EmptyCart";
 
 const ShoppingCart = ({ isOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();
+
   return (
     <Drawer
       PaperProps={{
@@ -34,7 +35,13 @@ const ShoppingCart = ({ isOpen }) => {
       </div>
       {cartItems.length === 0 && <EmptyCart />}
       {cartItems.map((item) => (
-        <CartItem key={item.id} {...item} />
+        <>
+          <CartItem key={item.id} {...item} />
+          <h4>{cartItems.reduce(
+    (accumulator, currentValue) => accumulator.price + currentValue.price,
+    0
+  )}</h4>
+        </>
       ))}
     </Drawer>
   );

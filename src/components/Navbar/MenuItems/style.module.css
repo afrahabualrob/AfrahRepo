@@ -1,17 +1,41 @@
-.menuList {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.logoutBtn {
+  font-family: "ProximaNova-Semibold";
+  color: rgba(51, 51, 58, 1);
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-.column {
-  flex-direction: column;
-  text-align: center;
-}
-@media only screen and (max-width: 786px) {
+
+@media only screen and (max-width: 899px) {
   .menuItem {
     text-align: center;
     border-top: solid #888 1px;
+    width: 100%;
+  }
+
+  .logoutBtn {
+    background-color: transparent;
+    transition: all 0.7s ease-in;
+  }
+
+  .logoutBtn {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: solid #888 1px;
+    display: block !important;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 500;
+    width: 100vw;
+  }
+
+  .logoutBtn:hover {
+    background-color: #888;
   }
 }

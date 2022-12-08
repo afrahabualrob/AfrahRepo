@@ -1,15 +1,13 @@
 import React from "react";
 import styles from "./style.module.css";
-import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const MenuItem = ({ menuItem }) => {
+const MenuItem = ({ menuItem, setIsMenuOpened }) => {
   return (
-    <div className={styles.menuItem}>
+    <div className={styles.menuItem} onClick={()=>{setIsMenuOpened(false)}}>
       <Link to={menuItem} className={styles.menuLink}>
         {menuItem}
       </Link>
-      <FaAngleDown className={styles.angleIcon} />
     </div>
   );
 };
