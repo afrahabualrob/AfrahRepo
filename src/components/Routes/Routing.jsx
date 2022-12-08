@@ -1,27 +1,35 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import MainPage from "../Pages/MainPage";
-import TechniqueLanding from "../Pages/TechniqueLanding";
-import ProductListing from "../ProductListing";
 import Layout from "./Layout";
-import AboutPage from "../Pages/AboutPage";
-import JournalPage from "../Pages/JournalPage";
-import ProductDetailsPage from "../Pages/ProductDetailsPage";
+import NoMatch from "../Pages/NoMatch";
+const MainPage = React.lazy(() => import("../Pages/MainPage"));
+const ProductListing = React.lazy(() => import("../ProductListing"));
+const AboutPage = React.lazy(() => import("../Pages/AboutPage"));
+const JournalPage = React.lazy(() => import("../Pages/JournalPage"));
+const ProductDetailsPage = React.lazy(() =>
+  import("../Pages/ProductDetailsPage")
+);
+const Loader = React.lazy(() => import("../Loader"));
 
 const Routing = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<MainPage />} />
-          <Route path="shop" element={<ProductListing />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="fabric" element={<TechniqueLanding />} />
-          <Route path="journal" element={<JournalPage />} />
-          <Route path="/products/:productId" element={<ProductDetailsPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Suspense fallback={<Loader />}>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<MainPage />} />
+            <Route path="shop" element={<ProductListing />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="journal" element={<JournalPage />} />
+            <Route
+              path="/products/:productId"
+              element={<ProductDetailsPage />}
+            />
+            <Route path="*" element={<NoMatch />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 };
 

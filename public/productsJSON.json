@@ -1,21 +1,22 @@
 [
    {
       "id":1,
-      "title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price":109.95,
-      "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category":"men's clothing",
-      "image":"https://images.unsplash.com/photo-1589465885857-44edb59bbff2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fHdlYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "title":"Apple MacBook Air",
+      "price":600.99,
+      "description":"2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Gray",
+      "category":"electronics",
+      "image":"https://i.pinimg.com/236x/1e/e1/c4/1ee1c4133b9d9a0ed6afe3d16ad66951.jpg",
       "rating":{
          "rate":3.9,
          "count":120
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://i.pinimg.com/236x/d9/0c/ab/d90cabd586dbc8ab12e8c9dcbcebf927.jpg",
+         "https://m.media-amazon.com/images/I/712v9WGWDBL._AC_SX466_.jpg",
+         "https://m.media-amazon.com/images/I/91YEUMzK8cL._AC_SX466_.jpg",
+         "https://m.media-amazon.com/images/I/61ChHwbxObL._AC_SX466_.jpg",
+         "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SX466_.jpg"
+         
       ],
       "sizes":[
          1,
@@ -25,39 +26,39 @@
       ],
       "details":[
          {
-            "subTitle":"artisan employment",
-            "info":"88 jobs"
+            "subTitle":"Screen Size",
+            "info":"13.3 Inches"
          },
          {
-            "subTitle":"partnership",
-            "info":"Randall Armstrong"
+            "subTitle":"color",
+            "info":"Space Gray"
          },
          {
-            "subTitle":"In collab:",
-            "info":"Augusta Mendoza"
+            "subTitle":"Hard Disk Size:",
+            "info":"256 GB"
          }
       ],
       "color":"gray",
-      "date":"11-11-2022"
+      "date":"12-12-2022"
    },
    {
       "id":2,
-      "title":"Mens Casual Premium Slim Fit T-Shirts ",
-      "price":22.3,
-      "description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "title":"Champion Big and Tall Hoodie ",
+      "price":25.5,
+      "description":"MENS HOODIES: With style, these big and tall Champion hoodies for men offers warmth and functionality. As an outdoor workout mens hoodie, they are great for running trails, jogging, hiking, or camping.",
       "category":"men's clothing",
       "quantity":5,
-      "image":"https://images.unsplash.com/photo-1598017194618-e4358adf41e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "image":"https://i.pinimg.com/236x/b2/db/1f/b2db1f164442440bc0ecb55654d8f7df.jpg",
       "rating":{
          "rate":4.1,
          "count":259
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://m.media-amazon.com/images/I/61-7z5pACqL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/61hPqMXnTIL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/61UemkFrVNL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/617QbmE6tqL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/514szVGUGkL._AC_UL1500_.jpg"
       ],
       "sizes":[
          1,
@@ -67,8 +68,8 @@
       ],
       "details":[
          {
-            "subTitle":"artisan employment",
-            "info":"88 jobs"
+            "subTitle":"material",
+            "info":"75% Cotton, 25% Polyester"
          },
          {
             "subTitle":"partnership",
@@ -84,21 +85,20 @@
    },
    {
       "id":3,
-      "title":"Mens Cotton Jacket",
-      "price":55.99,
-      "description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "title":"Mens Varsity College Jacket",
+      "price":119.99,
+      "description":"Full cut jacket featuring a chest  letter patch and bone pattern embroidery. Top quality fabric body、PU leather sleeves wih elastic cuffs. Slanted front pockets. Front snap button closure. Rib hem",
       "category":"men's clothing",
-      "image":"https://i.pinimg.com/564x/6a/c3/7b/6ac37bf02ec3aff2d53f90b73e83f53f.jpg",
+      "image":"https://i.pinimg.com/564x/92/c2/cd/92c2cdac080f664342d64aacc2d1a562.jpg",
       "rating":{
          "rate":4.7,
          "count":500
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://m.media-amazon.com/images/I/713PyoxrShL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/714nWwsqmrL._AC_UL1200_.jpg",
+         "https://i.pinimg.com/564x/92/c2/cd/92c2cdac080f664342d64aacc2d1a562.jpg",
+         "https://m.media-amazon.com/images/I/71ADm5O+G5L._AC_UL1500_.jpg"
       ],
       "sizes":[
          1,
@@ -108,39 +108,38 @@
       ],
       "details":[
          {
-            "subTitle":"artisan employment",
-            "info":"88 jobs"
+            "subTitle":"material",
+            "info":"cotton"
          },
          {
-            "subTitle":"partnership",
-            "info":"Randall Armstrong"
+            "subTitle":"pattern type",
+            "info":"patchwork,Letter"
          },
          {
-            "subTitle":"In collab:",
-            "info":"Augusta Mendoza"
+            "subTitle":"sleeve:",
+            "info":"Long sleeve"
          }
       ],
       "color":"Beige",
-      "date":"11-10-2022"
+      "date":"11-12-2022"
    },
    {
       "id":4,
-      "title":"Mens Casual Slim Fit",
-      "price":15.99,
-      "description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "title":"Men's Cotton Plaid Jacket",
+      "price":149.99,
+      "description":"This long sleeve flannel shirt crafted with a 100% Cotton flannel shell and soft beige sherpa lining will keep you warm all season long. Your new wardrobe favorite",
       "category":"men's clothing",
-      "image":"https://i.pinimg.com/564x/06/45/2f/06452fe806c28a3c483c33ef84a752b8.jpg",
+      "image":"https://i.pinimg.com/564x/cb/36/95/cb36953bc6f9152e56beabb7a9d4adda.jpg",
       "rating":{
-         "rate":2.1,
+         "rate":3.1,
          "count":430
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
-      ],
+         "https://m.media-amazon.com/images/I/71whrN29UsL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/81iKppSUfrL._AC_UL1500_.jpg",
+         "https://i.pinimg.com/564x/cb/36/95/cb36953bc6f9152e56beabb7a9d4adda.jpg",
+         "https://m.media-amazon.com/images/I/715l12mlDIL._AC_UL1500_.jpg"
+            ],
       "sizes":[
          1,
          2,
@@ -149,16 +148,16 @@
       ],
       "details":[
          {
-            "subTitle":"artisan employment",
-            "info":"88 jobs"
+            "subTitle":"Material",
+            "info":"00% Cotton Outer with Fleece Lining"
          },
          {
-            "subTitle":"partnership",
-            "info":"Randall Armstrong"
+            "subTitle":"Occasion",
+            "info":"versatile hooded jacket that will look stylish "
          },
          {
-            "subTitle":"In collab:",
-            "info":"Augusta Mendoza"
+            "subTitle":"pattern type:",
+            "info":"plaid"
          }
       ],
       "color":"gray",
@@ -170,17 +169,16 @@
       "price":695,
       "description":"From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
       "category":"jewelery",
-      "image":"https://images.unsplash.com/photo-1608042314453-ae338d80c427?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=510&q=80",
+      "image":"https://i.pinimg.com/564x/58/b1/ab/58b1ab4ccc36e50a35f96bd220651019.jpg",
       "rating":{
          "rate":4.6,
          "count":400
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://images-na.ssl-images-amazon.com/images/I/61OhRmDNYdL._AC_UL116_SR116,116_.jpg",
+         "https://m.media-amazon.com/images/I/61zedI0zN5S._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/61OhRmDNYdL._AC_UL1500_.jpg",
+         "https://m.media-amazon.com/images/I/51KAHwqRy1L._AC_UL320_.jpg"
       ],
       "sizes":[
          1,

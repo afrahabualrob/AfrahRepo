@@ -2,15 +2,12 @@ import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 import styles from "./style.module.css";
+import useMultipleRandom from "../../../hook/useMultipleRandom.js"
 
 const Others = () => {
   const { productsJson } = useShoppingCart();
 
-  function getMultipleRandom(arr, num) {
-    const shuffled = [...arr].sort(() => 0.5 - Math.random());
 
-    return shuffled.slice(0, num);
-  }
   return (
     <section style={{ padding: "30px 0" }}>
       <img
@@ -25,7 +22,7 @@ const Others = () => {
           Mongolian, sauces, recipes ) i will tell you about the Greek way.
         </Typography>
 
-        <Typography variant="body1" gutterBottom color="#33333A" sx={{py:3}}>
+        <Typography variant="body1" gutterBottom color="#33333A" sx={{ py: 3 }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry’s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -40,7 +37,7 @@ const Others = () => {
 
       <Container>
         <Grid container justifyContent="space=-between" spacing={6}>
-          {getMultipleRandom(productsJson, 3).map((product) => (
+          {useMultipleRandom(productsJson, 3).map((product) => (
             <Grid item xs={12} sm={4}>
               <img src={product.image} width="80%" />
             </Grid>

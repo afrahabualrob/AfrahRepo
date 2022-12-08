@@ -51,7 +51,7 @@ const BackGround = ({ expandedItem }) => {
       name: "electronics",
       description: "This is a electronics",
       img:
-        "https://thumbs.dreamstime.com/b/top-view-creative-flat-lay-photo-modern-workplace-laptop-top-view-laptop-background-copy-space-white-background-top-143791420.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAP3Yve6WenP7zF_zk2bhhKtljYfxPlL7ffQ&usqp=CAU",
     },
   ];
   const [selectedView, setSelectedView] = useState("");
