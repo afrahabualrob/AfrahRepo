@@ -1,8 +1,8 @@
 import { Dialog, DialogContent } from "@mui/material";
 import React from "react";
 import styles from "./style.module.css";
-import Registration from "../../Registration";
 import { Link } from "react-router-dom";
+import Login from "../../Registration/Login.jsx";
 
 const EmptyCart = () => {
   const [open, setOpen] = React.useState(false);
@@ -31,7 +31,7 @@ const EmptyCart = () => {
           </button>
           <Dialog open={open} onClose={handleClose}>
             <DialogContent>
-              <Registration />
+              <Login />
             </DialogContent>
           </Dialog>
         </div>

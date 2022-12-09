@@ -1,14 +1,26 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./style.module.css";
 import RegisterButton from "../RegisterButton";
-import { useCookies } from "react-cookie";
 import axios from "axios";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { Cookies, useCookies } from "react-cookie";
 
-const Login = () => {
+import {
+  FormControl,
+  InputLabel,
+  Input,
+  InputAdornment,
+  IconButton,
+  TextField,
+} from "@mui/material";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+
+const Login = ({ setOpen }) => {
+  const [msg, setMsg] = useState("");
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({ showPassword: false });
   const [userToken, setUserToken] = useCookies();
 
   const handleEmailChange = (event) => {
@@ -18,7 +30,9 @@ const Login = () => {
   const handlePasswordChange = (event) => {
     setUser({ ...user, password: event.target.value });
   };
-
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
   const loginSubmission = async (e) => {
     console.log(user);
     e.preventDefault();
@@ -31,39 +45,74 @@ const Login = () => {
 
     emailRef.current.value = "";
     passwordRef.current.value = "";
+    if (res.data.data !== null) {
+      setMsg("Successful Login");
+      setOpen(false);
+    } else setMsg("Your email or password is incorrect.");
   };
 
+  const handleClickShowPassword = () => {
+    setUser({
+      ...user,
+      showPassword: !user.showPassword,
+    });
+  };
   return (
-    <form>
-      <label htmlFor="chk" aria-hidden="true" className={styles.loginLabel}>
-        Login
-      </label>
-      <Grid container flexDirection="column" justifyContent="flex-end">
-        <Grid item xs={12}>
-          <input
-            ref={emailRef}
-            type="text"
-            name="email"
-            placeholder="Email"
-            required
-            className={styles.registerInput}
-            onChange={handleEmailChange}
-          />
+    <form className={styles.form}>
+      <div>
+        <h4 className={styles.loginLabel}>Login</h4>
+        <Grid
+          container
+          flexDirection="column"
+          justifyContent="center"
+          rowSpacing={3}
+        >
+          <Grid item>
+            <TextField
+              className={styles.loginInput}
+              ref={emailRef}
+              label="Email"
+              variant="standard"
+              onChange={handleEmailChange}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <FormControl className={styles.loginInput}>
+              <InputLabel htmlFor="standard-adornment-password">
+                Password
+              </InputLabel>
+              <Input
+                ref={passwordRef}
+                helperText=" "
+                label="pass"
+                variant="standard"
+                required
+                type={user.showPassword ? "text" : "password"}
+                onChange={handlePasswordChange}
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handleClickShowPassword}
+                      onMouseDown={handleMouseDownPassword}
+                    >
+                      {user.showPassword ? (
+                        <VisibilityOffIcon />
+                      ) : (
+                        <VisibilityIcon />
+                      )}
+                    </IconButton>
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </Grid>
+          <Grid item>
+            <RegisterButton value="login" loginSubmission={loginSubmission} />
+            <span className={styles.errorMsg}>{msg}</span>
+          </Grid>
         </Grid>
-        <Grid item xs={12}>
-          <input
-            ref={passwordRef}
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            className={styles.registerInput}
-            onChange={handlePasswordChange}
-          />
-        </Grid>
-      </Grid>
-
-      <RegisterButton value="login" loginSubmission={loginSubmission} />
+      </div>
     </form>
   );
 };

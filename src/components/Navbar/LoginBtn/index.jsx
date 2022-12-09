@@ -2,9 +2,17 @@ import React from "react";
 import styles from "./style.module.css";
 import { useCookies } from "react-cookie";
 import LoggedUser from "../LoggedUser";
-import { Dialog, DialogContent, Button } from "@mui/material";
-import Registration from "../../Registration";
-
+import {
+  Dialog,
+  DialogContent,
+  Button,
+  Toolbar,
+  IconButton,
+  Typography,
+  Grid
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import Login from "../../Registration/Login.jsx";
 const LoginBtn = () => {
   const [cookie, setCookie] = useCookies();
   const [open, setOpen] = React.useState(false);
@@ -26,8 +34,22 @@ const LoginBtn = () => {
         </button>
       )}
       <Dialog open={open} onClose={handleClose}>
+        <Toolbar>
+          <Grid container justifyContent="flex-end">
+            <Grid item>
+              <IconButton
+                edge="end"
+                color="inherit"
+                onClick={handleClose}
+                aria-label="close"
+              >
+                <CloseIcon />
+              </IconButton>
+            </Grid>
+          </Grid>
+        </Toolbar>
         <DialogContent>
-          <Registration />
+          <Login setOpen={setOpen} />
         </DialogContent>
       </Dialog>
     </>

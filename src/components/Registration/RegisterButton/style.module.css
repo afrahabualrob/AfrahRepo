@@ -5,7 +5,6 @@
   justify-content: center;
   display: block;
   color: #fff;
-  /* background: #573b8a; */
   background-color: #089a73;
   font-size: 1em;
   font-weight: bold;
@@ -17,6 +16,5 @@
   cursor: pointer;
 }
 .registerButton:hover {
-  /* background: #6d44b8; */
-  background-color:#026c4f;
+  background-color: #026c4f;
 }
