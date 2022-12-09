@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import Carousel from "react-material-ui-carousel";
 import NextButton from "../HeaderPart/Buttons/next-button";
 import PrevButton from "../HeaderPart/Buttons/prev-button";
+import { Link } from "react-router-dom";
 
 const index = () => {
   const headerResponse = [
@@ -10,15 +11,13 @@ const index = () => {
       id: 1,
       bg_img: "./assets/images/bg_header.png",
       title: "Perfume Tips Tricks2",
-      btnSrc: "#",
-      btnValue: "shop now",
+  
     },
     {
       id: 2,
       bg_img: "./assets/images/bg_header2.png",
       title: "Perfume Tips Tricks",
-      btnSrc: "#",
-      btnValue: "shop now",
+
     },
   ];
   return (
@@ -48,9 +47,9 @@ const index = () => {
                   <div className={styles.container}>
                     <div>
                       <h1 className={styles.mainHeading}>{title}</h1>
-                      <a className={styles.linkButton} href={btnSrc}>
-                        {btnValue}
-                      </a>
+                      <Link to="shop" className={styles.linkButton}>
+                        shop now
+                      </Link>
                     </div>
                   </div>
                 </div>

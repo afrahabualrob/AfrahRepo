@@ -9,7 +9,7 @@ export const useShoppingCart = () => {
 };
 
 export function ShoppingCartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([{ id: 9, quantity: 2 }]);
+  const [cartItems, setCartItems] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [productsJson, setProductJson] = useState([]);
 

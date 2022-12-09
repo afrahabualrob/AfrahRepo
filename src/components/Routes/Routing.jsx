@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import NoMatch from "../Pages/NoMatch";
 const MainPage = React.lazy(() => import("../Pages/MainPage"));
 const ProductListing = React.lazy(() => import("../ProductListing"));
 const AboutPage = React.lazy(() => import("../Pages/AboutPage"));
@@ -10,6 +9,7 @@ const ProductDetailsPage = React.lazy(() =>
   import("../Pages/ProductDetailsPage")
 );
 const Loader = React.lazy(() => import("../Loader"));
+const NoMatch = React.lazy(() => import("../Pages/NoMatch"));
 
 const Routing = () => {
   return (

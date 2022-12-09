@@ -3,8 +3,10 @@ import React from "react";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import Login from "../../Registration/Login.jsx";
+import { useCookies } from "react-cookie";
 
-const EmptyCart = () => {
+const EmptyCart = ({ closeCart }) => {
+  const [cookie, setCookie] = useCookies();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -12,6 +14,10 @@ const EmptyCart = () => {
   };
   const handleClose = () => {
     setOpen(false);
+  };
+  const swapToLogin = () => {
+    setOpen(true);
+    closeCart();
   };
   return (
     <section className={styles.emptyCart}>
@@ -21,20 +27,24 @@ const EmptyCart = () => {
           No products have been added to your cart yet
         </h6>
         <div className={styles.center}>
-          {/* <Link to="shop">
+          {/* <Link to="/">
             <button className={styles.shoppingBtn}> Start shopping now</button>
           </Link> */}
         </div>
-        <div className={styles.center}>
-          <button className={styles.loginBtn} onClick={handleClickOpen}>
-            login
-          </button>
-          <Dialog open={open} onClose={handleClose}>
-            <DialogContent>
-              <Login />
-            </DialogContent>
-          </Dialog>
-        </div>
+        {"Token" in cookie ? (
+          <></>
+        ) : (
+          <div className={styles.center}>
+            <button className={styles.loginBtn} onClick={swapToLogin}>
+              login
+            </button>
+            <Dialog open={open} onClose={handleClose}>
+              <DialogContent>
+                <Login />
+              </DialogContent>
+            </Dialog>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -4,7 +4,6 @@ import RegisterButton from "../RegisterButton";
 import axios from "axios";
 import { Grid, Typography } from "@mui/material";
 import { Cookies, useCookies } from "react-cookie";
-
 import {
   FormControl,
   InputLabel,
@@ -23,6 +22,10 @@ const Login = ({ setOpen }) => {
   const [user, setUser] = useState({ showPassword: false });
   const [userToken, setUserToken] = useCookies();
 
+  const isValidEmail = (email) => {
+    return email ? /\S+@\S+\.\S+/.test(email) : true;
+  };
+
   const handleEmailChange = (event) => {
     setUser({ ...user, email: event.target.value });
   };
@@ -30,11 +33,20 @@ const Login = ({ setOpen }) => {
   const handlePasswordChange = (event) => {
     setUser({ ...user, password: event.target.value });
   };
+
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
+
+  const disabledBtn = () => {
+    return (
+      user.email.length === 0 &&
+      user.password.length === 0 &&
+      !isValidEmail(user.email)
+    );
+  };
+
   const loginSubmission = async (e) => {
-    console.log(user);
     e.preventDefault();
     const res = await axios.post(
       "http://restapi.adequateshop.com/api/authaccount/login",
@@ -47,7 +59,9 @@ const Login = ({ setOpen }) => {
     passwordRef.current.value = "";
     if (res.data.data !== null) {
       setMsg("Successful Login");
-      setOpen(false);
+      setTimeout(() => {
+        setOpen(false);
+      }, 1000);
     } else setMsg("Your email or password is incorrect.");
   };
 
@@ -57,6 +71,7 @@ const Login = ({ setOpen }) => {
       showPassword: !user.showPassword,
     });
   };
+
   return (
     <form className={styles.form}>
       <div>
@@ -74,6 +89,8 @@ const Login = ({ setOpen }) => {
               label="Email"
               variant="standard"
               onChange={handleEmailChange}
+              error={!isValidEmail(user.email)}
+              helperText={!isValidEmail(user.email) ? "oops invalid Email" : ""}
             />
           </Grid>
           <Grid item xs={12}>
@@ -83,7 +100,6 @@ const Login = ({ setOpen }) => {
               </InputLabel>
               <Input
                 ref={passwordRef}
-                helperText=" "
                 label="pass"
                 variant="standard"
                 required
@@ -108,7 +124,11 @@ const Login = ({ setOpen }) => {
             </FormControl>
           </Grid>
           <Grid item>
-            <RegisterButton value="login" loginSubmission={loginSubmission} />
+            <RegisterButton
+              value="login"
+              loginSubmission={loginSubmission}
+              disabledBtn={disabledBtn}
+            />
             <span className={styles.errorMsg}>{msg}</span>
           </Grid>
         </Grid>

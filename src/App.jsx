@@ -8,6 +8,7 @@ import { FavoriteProvider } from "./Context/Favorites";
 function App() {
   return (
     <div className="App">
+      
       <ShoppingCartProvider>
         <FavoriteProvider>
           <Routing />

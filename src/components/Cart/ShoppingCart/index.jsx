@@ -33,14 +33,17 @@ const ShoppingCart = ({ isOpen }) => {
           <ChevronLeftIcon />
         </IconButton>
       </div>
-      {cartItems.length === 0 && <EmptyCart />}
+      {cartItems.length === 0 && <EmptyCart closeCart={closeCart} />}
       {cartItems.map((item) => (
         <>
           <CartItem key={item.id} {...item} />
-          <h4>{cartItems.reduce(
-    (accumulator, currentValue) => accumulator.price + currentValue.price,
-    0
-  )}</h4>
+          <h4>
+            {cartItems.reduce(
+              (accumulator, currentValue) =>
+                accumulator.price + currentValue.price,
+              0
+            )}
+          </h4>
         </>
       ))}
     </Drawer>

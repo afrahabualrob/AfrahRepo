@@ -14,6 +14,7 @@ const MenuItems = ({ listDirection, setIsMenuOpened }) => {
 
   const menuItems = ["shop", "journal", "about"];
   return (
+    
     <Grid
       container
       flexDirection={{ xs: "column", md: "row" }}
