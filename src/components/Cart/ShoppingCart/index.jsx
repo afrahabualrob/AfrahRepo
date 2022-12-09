@@ -4,7 +4,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import IconButton from "@mui/material/IconButton";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 import CartItem from "../CartItem";
-import EmptyCart from "../../Shop/EmptyCart";
+import EmptyCart from "../EmptyCart";
 
 const ShoppingCart = ({ isOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();

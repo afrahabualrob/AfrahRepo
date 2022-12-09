@@ -4,7 +4,7 @@ import DialogProductDetails from "../DialogProductDetails";
 import DialogProductSize from "../DialogProductSize";
 import QuantitySection from "../QuantitySection";
 import styles from "./style.module.css";
-import Rating from "../Rating";
+import RatingProduct from "../RatingProduct";
 import DialogDescription from "../DialogDescription/index";
 import { Grid, Container } from "@mui/material";
 
@@ -46,7 +46,7 @@ const DialogCard = ({ productItem }) => {
               <p className={styles.price}>SGD {price}</p>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Rating rating={rating.rate} />
+              <RatingProduct rating={rating.rate} />
             </Grid>
           </Grid>
           <DialogDescription description={description} />

@@ -12,16 +12,17 @@ const Colors = ({
   productsSpecificColor,
 }) => {
   const colorsJson = [
-    { id: 1, name: "gray", code: "#6e9e9e" },
-    { id: 2, name: "Gainsboro", code: "#ccc" },
-    { id: 3, name: "RebeccaPurple", code: "#800080" },
-    { id: 4, name: "IndianRed", code: "#CD5C5C" },
+    { id: 1, name: "teal", code: "#9ED5C5" },
+    { id: 2, name: "Gainsboro", code: "#DEBACE" },
+    { id: 3, name: "RebeccaBrown", code: "#a76213" },
+    { id: 4, name: "black", code: "#352322" },
     { id: 5, name: "Silver", code: "#d0e1e1" },
-    { id: 6, name: "PaleGoldenRod", code: "#EEE8AA" },
-    { id: 7, name: "Beige", code: "#F5F5DC" },
-    { id: 8, name: "DarkSlateGrey", code: "#2F4F4F" },
+    { id: 6, name: "blue", code: "#7cbffd" },
+    { id: 7, name: "gold", code: "#f8efbf" },
+    { id: 8, name: "DarkSlateGrey", code: "#7c7578" },
     { id: 9, name: "white", code: "#fff" },
-    { id: 10, name: "MidnightBlue", code: "#191970" },
+    { id: 10, name: "pink", code: "#F7A4A4" },
+    { id: 10, name: "darkGreen", code: "#024c3f" },
   ];
   const changeColor = (e, color) => {
     setSelectedColor(color);

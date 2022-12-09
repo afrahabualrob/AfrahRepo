@@ -7,7 +7,7 @@
 .exploreCard_SubHeading {
   opacity: 1;
   color: rgba(51, 51, 58, 1);
-  font-family: "ProximaNova-Semibold";
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 12px;
   font-weight: 600;
   font-style: normal;
@@ -20,7 +20,7 @@
 
 .exploreCard_title {
   color: rgba(51, 51, 58, 1);
-  font-family: "VLNewParisHeadline";
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -32,7 +32,7 @@
 }
 .exploreCard_description {
   color: rgba(51, 51, 58, 1);
-  font-family: "ProximaNova-Light";
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
   font-weight: 300;
   font-style: normal;

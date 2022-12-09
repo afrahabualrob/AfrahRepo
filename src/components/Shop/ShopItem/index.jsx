@@ -3,7 +3,6 @@ import styles from "./style.module.css";
 import ShopItemImage from "../ShopItem/ShopItemImage";
 import ShopItemLabel from "../ShopItem/ShopItemLabel";
 import ShopItemButton from "../ShopItem/ShopItemButton";
-// import ViewButton from "../../Featured/ViewButton"
 
 const ShopItem = ({ shop_Item }) => {
   const { category, category_img, url } = shop_Item;

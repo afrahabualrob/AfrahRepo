@@ -11,7 +11,7 @@ const Others = () => {
   return (
     <section style={{ padding: "30px 0" }}>
       <img
-        src="./assets/images/det.png"
+        src="/assets/images/det.png"
         alt="details picture"
         className={styles.image}
       />

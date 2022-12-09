@@ -2,10 +2,9 @@
   margin-top: 8px;
 }
 
-
 .sizeItem,
 .selectedSize {
-  font-family: "ProximaNova-Regular";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -19,15 +18,14 @@
   margin-right: 8px;
   cursor: pointer;
 }
-.sizeItem:hover{
-  border: 1px solid rgba(222, 222, 222, 1);;
+.sizeItem:hover {
+  border: 1px solid rgba(222, 222, 222, 1);
 }
-
 
 .sizeGuidelines {
   color: rgba(51, 51, 58, 1);
-  font-family: "ProximaNova-Semibold";
-  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 1px;
@@ -38,8 +36,8 @@
 }
 .modelInfo {
   color: rgba(102, 102, 102, 1);
-  font-family: "ProximaNova-Regular";
-  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;

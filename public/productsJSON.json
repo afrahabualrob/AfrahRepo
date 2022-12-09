@@ -38,7 +38,7 @@
             "info":"256 GB"
          }
       ],
-      "color":"gray",
+      "color":"Silver",
       "date":"12-12-2022"
    },
    {
@@ -80,7 +80,7 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"Gainsboro",
+      "color":"black",
       "date":"10-10-2022"
    },
    {
@@ -91,7 +91,7 @@
       "category":"men's clothing",
       "image":"https://i.pinimg.com/564x/92/c2/cd/92c2cdac080f664342d64aacc2d1a562.jpg",
       "rating":{
-         "rate":4.7,
+         "rate":4.2,
          "count":500
       },
       "images":[
@@ -120,7 +120,7 @@
             "info":"Long sleeve"
          }
       ],
-      "color":"Beige",
+      "color":"RebeccaBrown",
       "date":"11-12-2022"
    },
    {
@@ -160,25 +160,25 @@
             "info":"plaid"
          }
       ],
-      "color":"gray",
+      "color":"black",
       "date":"11-11-2022"
    },
    {
       "id":5,
-      "title":"Pearl Necklace Pendant ",
+      "title":"2pcs Faux Pendant Necklace",
       "price":100,
       "description":"This Rose Gold Necklaces is Crafted from Real 925 Hypoallergenic Sterling Silver with 14K Yellow Gold Plating. 16 Length with a 2 Extension. A Perfect Bridesmaid Necklace!",
       "category":"jewelery",
-      "image":"https://i.pinimg.com/564x/58/b1/ab/58b1ab4ccc36e50a35f96bd220651019.jpg",
+      "image":"https://img.ltwebstatic.com/images3_pi/2022/11/04/1667532202016de977c12dea5631e1b403972f31c3_thumbnail_600x.webp",
       "rating":{
          "rate":4.6,
          "count":400
       },
       "images":[
-         "https://m.media-amazon.com/images/I/61OhRmDNYdL._AC_UL1500_.jpg",
-         "https://m.media-amazon.com/images/I/61zedI0zN5S._AC_UL1500_.jpg",
-         "https://m.media-amazon.com/images/I/61OhRmDNYdL._AC_UL1500_.jpg",
-         "https://m.media-amazon.com/images/I/51KAHwqRy1L._AC_UL320_.jpg"
+         "https://img.ltwebstatic.com/images3_pi/2022/11/04/1667532202016de977c12dea5631e1b403972f31c3_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/04/1667532204a68a1fca1328b6a373d126e220bfae7a_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/04/1667532207b0fe7b2596b219aa39d2ff0eae14465d_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/04/16675322092079e4942271188f22e88198224f2473_thumbnail_600x.webp"
       ],
       "sizes":[
          1,
@@ -200,27 +200,26 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"Silver",
-      "date":"12-11-2022"
+      "color":"gold",
+      "date":"12-12-2022"
    },
    {
       "id":6,
-      "title":"Solid Gold Petite Micropave ",
-      "price":168,
-      "description":"Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "title":"Cuff Bracelet & Ring ",
+      "price":40,
+      "description":"Rhinestone Decor Cuff Bracelet & Ring. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
       "category":"jewelery",
-      "image":"https://i.pinimg.com/236x/20/2e/5f/202e5fc8a7688ac7c0db2a53ba02e7f0.jpg",
+      "image":"https://img.ltwebstatic.com/images3_pi/2022/11/03/16674451281b2d624b4a30a8f3ddc759da3ab8bf16_thumbnail_600x.webp",
       "rating":{
-         "rate":3.9,
+         "rate":4.9,
          "count":70
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
-      ],
+         "https://img.ltwebstatic.com/images3_pi/2022/11/03/16674451281b2d624b4a30a8f3ddc759da3ab8bf16_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/03/166744512985244cc29b6e2b78eae895bc10f2ddb5_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/03/16674451309d147defd4670f7793596d95dc090eb4_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2022/11/03/1667445132fbc69393c4d8bc64e0a89ef4a3ee1639_thumbnail_600x.webp"
+            ],
       "sizes":[
          1,
          2,
@@ -229,16 +228,16 @@
       ],
       "details":[
          {
-            "subTitle":"artisan employment",
-            "info":"88 jobs"
+            "subTitle":"Style",
+            "info":"Glamorous"
          },
          {
-            "subTitle":"partnership",
-            "info":"Randall Armstrong"
+            "subTitle":"Bracelets Material",
+            "info":"Copper"
          },
          {
-            "subTitle":"In collab:",
-            "info":"Augusta Mendoza"
+            "subTitle":"Details:",
+            "info":"Rhinestone"
          }
       ],
       "color":"Silver",
@@ -252,7 +251,7 @@
       "category":"jewelery",
       "image":"https://i.pinimg.com/236x/b3/d6/15/b3d615508285908e7689c310c567fcc9.jpg",
       "rating":{
-         "rate":5,
+         "rate":4.1,
          "count":400
       },
       "images":[
@@ -281,7 +280,7 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"Silver",
+      "color":"Gainsboro",
       "date":"20-9-2022"
    },
    {
@@ -322,7 +321,7 @@
             "info":"Layered Butterfly Bracelet"
          }
       ],
-      "color":"PaleGoldenRod",
+      "color":"Silver",
       "date":"13-12-2022"
    },
    {
@@ -363,7 +362,7 @@
             "info":"Slate"
          }
       ],
-      "color":"DarkSlateGrey",
+      "color":"white",
       "date":"12-20-2022"
    },
    {
@@ -415,7 +414,7 @@
       "category":"electronics",
       "image":"https://i.pinimg.com/564x/6f/08/eb/6f08ebd04238d060ef4341525c3c9789.jpg",
       "rating":{
-         "rate":4.8,
+         "rate":3.8,
          "count":319
       },
       "images":[
@@ -456,7 +455,7 @@
       "category":"men's clothing",
       "image":"https://www.justjeans.com.au/JJ/aurora/images/products/large/010420_denim_l.jpg?i10c=img.resize(width:256)",
       "rating":{
-         "rate":5,
+         "rate":3.5,
          "count":400
       },
       "images":[
@@ -485,8 +484,8 @@
             "info":"Regular"
          }
       ],
-      "color":"DarkSlateGrey",
-      "date":"11-13-2022"
+      "color":"blue",
+      "date":"12-13-2022"
    },
    {
       "id":13,
@@ -525,7 +524,7 @@
             "info":"Fabric"
          }
       ],
-      "color":"DarkSlateGrey",
+      "color":"teal",
       "date":"10-12-2022"
    },
    {
@@ -536,7 +535,7 @@
       "category":"electronics",
       "image":"https://img.ltwebstatic.com/images3_pi/2022/08/11/16602060855bcc779272e97d75851601310c32d788_thumbnail_600x.webp",
       "rating":{
-         "rate":2.2,
+         "rate":4.5,
          "count":140
       },
       "images":[
@@ -566,7 +565,7 @@
             "info":"Rechargeable"
          }
       ],
-      "color":"DarkSlateGrey",
+      "color":"pink",
       "date":"11-3-2022"
    },
    {
@@ -606,7 +605,7 @@
             "info":"Slight Stretch"
          }
       ],
-      "color":"RebeccaPurple",
+      "color":"pink",
       "date":"11-11-2022"
    },
    {
@@ -646,12 +645,12 @@
             "info":"Regular"
          }
       ],
-      "color":"gray",
+      "color":"white",
       "date":"9-22-2022"
    },
    {
       "id":17,
-      "title":"Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "title":"Rain Jacket Women",
       "price":39.99,
       "description":"Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
       "category":"women's clothing",
@@ -662,7 +661,6 @@
       },
       "images":[
          "https://img.ltwebstatic.com/images3_pi/2022/10/26/1666770714bf36ffc9e9fdc958cd1f4320e779d112_thumbnail_600x.webp",
-         "https://img.ltwebstatic.com/images3_acp/2022/11/25/166836712200e00c8ae11f81191cydxg.webp",
          "https://img.ltwebstatic.com/images3_pi/2022/10/26/1666770717db1340407b5f6796834da52e4d1ef51e_thumbnail_600x.webp",
          "https://img.ltwebstatic.com/images3_pi/2022/10/26/16667707196c7901381b7be25ca5f3b97548dd8174_thumbnail_600x.webp",
          "https://img.ltwebstatic.com/images3_pi/2022/10/26/16667707205351f0b4cd97208049351be546add431_thumbnail_600x.webp"
@@ -687,7 +685,7 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"MidnightBlue",
+      "color":"black",
       "date":"11-13-2022"
    },
    {
@@ -728,26 +726,25 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"white",
+      "color":"Gainsboro",
       "date":"11-13-2022"
    },
    {
       "id":19,
-      "title":"Opna Women's Short Sleeve Moisture",
+      "title":"Textured Glass Ring",
       "price":7.95,
       "description":"100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-      "category":"women's clothing",
-       "image":"https://i.pinimg.com/564x/34/b3/97/34b397cbdd23f916328951b23820b7bc.jpg",
+      "category":"jewelery",
+       "image":"https://img.ltwebstatic.com/images3_pi/2021/12/08/1638948412bc654a6baaef717ba0f529402161c5b8_thumbnail_600x.webp",
       "rating":{
          "rate":4.5,
          "count":146
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://img.ltwebstatic.com/images3_pi/2021/12/08/1638948412bc654a6baaef717ba0f529402161c5b8_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/12/08/16389484165849e054f87df67fdd97eaf38259280c_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/12/08/1638948419cef450cfbca6ec20e75feb46829a60e7_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/12/08/163894842121ec49dd90b20e277d5ced711acae26a_thumbnail_600x.webp"
       ],
       "sizes":[
          1,
@@ -769,26 +766,25 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"IndianRed",
-      "date":"10-11-2022"
+      "color":"darkGreen",
+      "date":"12-12-2022"
    },
    {
       "id":20,
-      "title":"DANVOUY Womens T Shirt Casual Cotton Short",
-      "price":12.99,
+      "title":"Thermal Hoodie",
+      "price":89.99,
       "description":"95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
       "category":"women's clothing",
-      "image":"./assets/images/item6.png",
+      "image":"https://img.ltwebstatic.com/images3_pi/2021/12/27/1640587375f7fc42f44e4d0b201a7952bb9fa5b2e4_thumbnail_600x.webp",
       "rating":{
-         "rate":3.6,
+         "rate":4.8,
          "count":145
       },
       "images":[
-         "https://dummyjson.com/image/i/products/20/1.jpg",
-         "https://dummyjson.com/image/i/products/20/2.jpg",
-         "https://dummyjson.com/image/i/products/20/3.jpg",
-         "https://dummyjson.com/image/i/products/20/4.jpg",
-         "https://dummyjson.com/image/i/products/20/thumbnail.jpg"
+         "https://img.ltwebstatic.com/images3_pi/2021/12/27/1640587375f7fc42f44e4d0b201a7952bb9fa5b2e4_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/10/17/1634448987f89b9750c7d923cae744e4a469014812_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/12/27/16405873766bc63c71d8004f6eb2df36bd4c77883f_thumbnail_600x.webp",
+         "https://img.ltwebstatic.com/images3_pi/2021/10/17/16344489882bdfac60ce8d158cbd5901c30f0e0ae0_thumbnail_600x.webp"
       ],
       "sizes":[
          1,
@@ -810,7 +806,7 @@
             "info":"Augusta Mendoza"
          }
       ],
-      "color":"RebeccaPurple",
-      "date":"11-13-2022"
+      "color":"darkGreen",
+      "date":"12-30-2022"
    }
 ]

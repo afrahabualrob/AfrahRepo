@@ -5,12 +5,10 @@
 .subscribeBtn {
   display: block;
   width: 30%;
-  opacity: 1;
   background-color: rgba(255, 255, 255, 1);
-  opacity: 1;
   color: rgba(51, 51, 58, 1);
-  font-family: "ProximaNova-Semibold";
-  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 2px;
