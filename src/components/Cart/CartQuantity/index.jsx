@@ -6,19 +6,18 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 const CartQuantity = ({ id, quantity, availableQuantity }) => {
-  const {
-    decreaseCartQuantity,
-    increaseCartQuantity,
-  } = useShoppingCart();
+  const { decreaseCartQuantity, increaseCartQuantity } = useShoppingCart();
 
   return (
     <Grid
       container
       alignItems="center"
-      justifyContent="center"
+      justifyContent="space-between"
       className={styles.wrapper}
+      flexDirection={{ xs: "column", md: "row" }}
+      sx={{maxWidth:"70px"}}
     >
-      <Grid item xs={4}>
+      <Grid item>
         <button
           className={styles.plusMinus}
           onClick={() => decreaseCartQuantity(id)}
@@ -27,12 +26,12 @@ const CartQuantity = ({ id, quantity, availableQuantity }) => {
           <RemoveIcon />
         </button>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item>
         <Typography variant="subtitle1" className={styles.quantityNumber}>
           {quantity}
         </Typography>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item>
         <button
           className={styles.plusMinus}
           onClick={() => increaseCartQuantity(id, 1)}

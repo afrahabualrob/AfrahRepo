@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer } from "@mui/material";
+import { Container, Drawer } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import IconButton from "@mui/material/IconButton";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
@@ -34,9 +34,11 @@ const ShoppingCart = ({ isOpen }) => {
         </IconButton>
       </div>
       {cartItems.length === 0 && <EmptyCart closeCart={closeCart} />}
-      {cartItems.map((item) => (
-        <CartItem key={item.id} {...item} />
-      ))}
+      <Container>
+        {cartItems.map((item) => (
+          <CartItem key={item.id} {...item} />
+        ))}
+      </Container>
     </Drawer>
   );
 };

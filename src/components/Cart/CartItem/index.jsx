@@ -17,15 +17,21 @@ const CartItem = ({ id, quantity }) => {
         container
         justifyContent="space-between"
         alignItems="center"
-        sx={{ padding: "8px 0 !important" }}
+        // sx={{ padding: "8px 0 !important" }}
       >
-        <Grid item xs={5}>
+        <Grid
+          item
+          // xs={4}
+        >
           <div className={styles.wrapper}>
             <img className={styles.cardItemImage} src={item.image} />
           </div>
           <span className={styles.cardItemTitle}>{item.title}</span>
         </Grid>
-        <Grid item xs={1}>
+        <Grid
+          item
+          // xs={2}
+        >
           <CartQuantity
             id={id}
             quantity={quantity}
@@ -33,35 +39,31 @@ const CartItem = ({ id, quantity }) => {
           />
         </Grid>
 
-        <Grid item xs={2}>
+        <Grid
+          item
+          // xs={2}
+        >
           <span className={styles.cardItemPrice}>
             {formatCurrency(item.price)}
           </span>
         </Grid>
 
-        <Grid
-          item
-          container
-          justifyContent="space-between"
-          xs={2}
-          alignItems="center"
-        >
-          <Grid item>
-            <span>{formatCurrency(item.price * quantity)}</span>
-          </Grid>
-          <Grid item>
-            <IconButton
-              className={styles.deleteBtn}
-              variant="outline-danger"
-              size="sm"
-              onClick={() => removeFromCart(item.id)}
-              aria-label="delete Item from Cart"
-            >
-              <DeleteIcon color="error" />
-            </IconButton>
-          </Grid>
+        <Grid item>
+          <span>{formatCurrency(item.price * quantity)}</span>
+        </Grid>
+        <Grid item>
+          <IconButton
+            className={styles.deleteBtn}
+            variant="outline-danger"
+            size="sm"
+            onClick={() => removeFromCart(item.id)}
+            aria-label="delete Item from Cart"
+          >
+            <DeleteIcon color="error" />
+          </IconButton>
         </Grid>
       </Grid>
+
       <Divider />
     </Stack>
   );
