@@ -13,7 +13,7 @@ const FeaturesFabric = () => {
   const [expanded2, setExpanded2] = useState("");
 
   return (
-    <>
+    <section style={{ paddingTop: "20px" }}>
       <Accordion
         onChange={() => setExpanded(!expanded)}
         sx={{
@@ -101,7 +101,7 @@ const FeaturesFabric = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-    </>
+    </section>
   );
 };
 
