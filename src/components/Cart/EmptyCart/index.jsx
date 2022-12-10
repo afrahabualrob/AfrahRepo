@@ -14,17 +14,17 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const EmptyCart = ({ closeCart }) => {
   const [cookie, setCookie] = useCookies();
-  const [open, setOpen] = React.useState(false);
+  const [open1, setOpen1] = React.useState(false);
 
   const handleClickOpen = () => {
-    setOpen(true);
+    setOpen1(true);
   };
   const handleClose = () => {
-    setOpen(false);
+    setOpen1(false);
   };
   const swapToLogin = () => {
-    setOpen(true);
     closeCart();
+    handleClickOpen();
   };
   return (
     <section className={styles.emptyCart}>
@@ -45,13 +45,14 @@ const EmptyCart = ({ closeCart }) => {
             <button className={styles.loginBtn} onClick={swapToLogin}>
               login
             </button>
-            <Dialog open={open} onClose={handleClose}>
+            <Dialog open={open1} onClose={handleClose}>
               <Toolbar>
                 <Grid container justifyContent="flex-end">
                   <Grid item>
                     <IconButton
                       edge="end"
                       color="inherit"
+                      onClick={handleClose}
                       aria-label="close"
                     >
                       <CloseIcon />
@@ -60,7 +61,7 @@ const EmptyCart = ({ closeCart }) => {
                 </Grid>
               </Toolbar>
               <DialogContent>
-                <Login setOpen={setOpen} />
+                <Login setOpen={setOpen1} />
               </DialogContent>
             </Dialog>
           </div>
