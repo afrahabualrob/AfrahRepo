@@ -1,10 +1,7 @@
 import React from "react";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import { Grid, IconButton, Button } from "@mui/material";
-import LoadingIcons from "react-loading-icons";
-
 import styles from "./style.module.css";
-import { fontWeight } from "@mui/system";
 
 const Loading = ({ indexLength, setIndexLength }) => {
   return (

@@ -1,18 +1,18 @@
 .logoutBtn {
-  font-family: "ProximaNova-Semibold";
   color: rgba(51, 51, 58, 1);
   font-size: 12px;
   font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
   font-style: normal;
-  letter-spacing: 1px;
   text-align: left;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+
 }
-.logoutBtn:hover{
-color:#888;
-cursor: pointer;
+.logoutBtn:hover {
+  color: #888;
+  cursor: pointer;
 }
 @media only screen and (max-width: 899px) {
   .menuItem {
@@ -24,9 +24,6 @@ cursor: pointer;
   .logoutBtn {
     background-color: transparent;
     transition: all 0.7s ease-in;
-  }
-
-  .logoutBtn {
     color: #fff;
     font-size: 16px;
     text-align: center;

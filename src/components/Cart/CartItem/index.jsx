@@ -26,7 +26,11 @@ const CartItem = ({ id, quantity }) => {
           <span className={styles.cardItemTitle}>{item.title}</span>
         </Grid>
         <Grid item xs={1}>
-          <CartQuantity id={id} quantity={quantity} />
+          <CartQuantity
+            id={id}
+            quantity={quantity}
+            availableQuantity={item.availableQuantity}
+          />
         </Grid>
 
         <Grid item xs={2}>

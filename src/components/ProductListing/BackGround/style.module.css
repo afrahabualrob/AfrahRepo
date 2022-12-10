@@ -5,11 +5,11 @@
 
 .title {
   color: rgba(51, 51, 58, 1);
-  font-family: "VLNewParisHeadline";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 60px;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-align: center;
   line-height: 90px;
   text-transform: capitalize;
@@ -17,10 +17,9 @@
 
 .description {
   color: rgba(3, 3, 3, 1);
-  font-family: "ProximaNova-Light";
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;
   text-align: center;

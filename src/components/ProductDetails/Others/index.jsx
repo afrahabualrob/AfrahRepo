@@ -2,11 +2,10 @@ import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 import styles from "./style.module.css";
-import useMultipleRandom from "../../../hook/useMultipleRandom.js"
+import useMultipleRandom from "../../../hook/useMultipleRandom.js";
 
 const Others = () => {
   const { productsJson } = useShoppingCart();
-
 
   return (
     <section style={{ padding: "30px 0" }}>
@@ -36,10 +35,16 @@ const Others = () => {
       </Container>
 
       <Container>
-        <Grid container justifyContent="space=-between" spacing={6}>
+        <Grid container justifyContent="space=-between" spacing={5}>
           {useMultipleRandom(productsJson, 3).map((product) => (
-            <Grid item xs={12} sm={4}>
-              <img src={product.image} width="80%" />
+            <Grid
+              item
+              xs={12}
+              sm={4}
+              container
+              justifyContent="center"
+            >
+              <img src={product.image} width="80%" alt="product"/>
             </Grid>
           ))}
         </Grid>

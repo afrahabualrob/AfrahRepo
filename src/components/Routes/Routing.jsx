@@ -8,7 +8,7 @@ const JournalPage = React.lazy(() => import("../Pages/JournalPage"));
 const ProductDetailsPage = React.lazy(() =>
   import("../Pages/ProductDetailsPage")
 );
-const Loader = React.lazy(() => import("../Loader"));
+const Loader = React.lazy(() => import("../Pages/Loader"));
 const NoMatch = React.lazy(() => import("../Pages/NoMatch"));
 
 const Routing = () => {

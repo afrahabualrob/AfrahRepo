@@ -5,11 +5,11 @@ import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
-const CartQuantity = ({ id, quantity }) => {
+const CartQuantity = ({ id, quantity, availableQuantity }) => {
   const {
     decreaseCartQuantity,
     increaseCartQuantity,
-    getItemQuantity,
+    // getItemQuantity,
   } = useShoppingCart();
 
   return (
@@ -37,7 +37,7 @@ const CartQuantity = ({ id, quantity }) => {
         <button
           className={styles.plusMinus}
           onClick={() => increaseCartQuantity(id, 1)}
-          disabled={quantity>=getItemQuantity(id)}
+          disabled={quantity >= availableQuantity}
         >
           <AddIcon />
         </button>

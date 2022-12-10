@@ -27,7 +27,16 @@ const FeaturesFabric = () => {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography variant="h6" sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              width: "33%",
+              flexShrink: 0,
+              fontSize: "16px",
+              fontWeight: "600",
+              color: "rgb(89, 87, 87)",
+            }}
+          >
             Feature
           </Typography>
         </AccordionSummary>
@@ -51,7 +60,16 @@ const FeaturesFabric = () => {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography variant="h6" sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              width: "33%",
+              flexShrink: 0,
+              fontSize: "16px",
+              fontWeight: "600",
+              color: "rgb(89, 87, 87)",
+            }}
+          >
             Fabric Care
           </Typography>
         </AccordionSummary>

@@ -49,9 +49,6 @@ const QuantitySection = ({ id, availableQuantity }) => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <Grid container spacing={1} alignItems="center" justifyContent="left">
-            <Grid item xs={2} sm={2}>
-              {/* <img src="/assets/icons/questionMark.svg" alt="Question Mark " /> */}
-            </Grid>
             <Grid item xs={10} sm={10}>
               <button
                 className={styles.AddToWishlistBtn}
