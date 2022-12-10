@@ -24,7 +24,7 @@ const MenuItems = ({ listDirection, setIsMenuOpened }) => {
       {[] &&
         menuItems.map((item, index) => {
           return (
-            <Grid item className={styles.menuItem}>
+            <Grid item className={styles.menuItem} key={index}>
               <MenuItem
                 key={index}
                 menuItem={item}

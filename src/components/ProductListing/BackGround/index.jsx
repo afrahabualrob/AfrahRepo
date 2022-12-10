@@ -57,7 +57,6 @@ const BackGround = ({ expandedItem }) => {
   const [selectedView, setSelectedView] = useState("");
   useEffect(() => {
     setSelectedView(expandedItems.find((item) => item.name === expandedItem));
-    console.log(selectedView);
   }, [expandedItem]);
 
   return (

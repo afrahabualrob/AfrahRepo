@@ -9,18 +9,18 @@ const Cart = () => {
   let { openCart, cartQuantity, cartItems } = useShoppingCart();
   cartQuantity = 8;
   return (
-    <>
+    <div           onClick={openCart}
+>
       <IconButton>
         <Badge
           color="primary"
-          onClick={openCart}
           badgeContent={cartItems.length}
           showZero
         >
           <ShoppingCartIcon color="action" />
         </Badge>
       </IconButton>
-    </>
+    </div>
   );
 };
 

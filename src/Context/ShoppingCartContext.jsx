@@ -67,8 +67,6 @@ export function ShoppingCartProvider({ children }) {
         } else return item;
       })
     );
-
-    console.log(cartItems);
   };
 
   function getItemQuantity(id) {

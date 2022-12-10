@@ -47,7 +47,6 @@ const Footer = () => {
             {[] &&
               footer_content.map((item) => {
                 const { id, title, content } = item;
-                console.log(item, "item");
                 return (
                   <div key={id} className={styles.footerLinks}>
                     <FooterTitle title={title} />

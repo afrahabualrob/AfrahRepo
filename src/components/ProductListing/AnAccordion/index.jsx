@@ -67,7 +67,6 @@ const AnAccordion = ({
                 >
                   {categoryName}
                 </ListItemText>
-                {console.log("selectedCategory" + selectedCategory)}
               </ListItem>
             );
           })}

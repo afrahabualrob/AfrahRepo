@@ -4,7 +4,6 @@ import { Grid } from "@mui/material";
 
 const DialogImage = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(0);
-  console.log({ selectedImage });
   const handle = (event, index) => {
     event.preventDefault();
     setSelectedImage(index);

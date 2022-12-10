@@ -13,16 +13,8 @@ const CartItem = ({ id, quantity }) => {
 
   return (
     <Stack spacing={2}>
-      <Grid
-        container
-        justifyContent="space-between"
-        alignItems="center"
-        // sx={{ padding: "8px 0 !important" }}
-      >
-        <Grid
-          item
-          // xs={4}
-        >
+      <Grid container justifyContent="space-between" alignItems="center">
+        <Grid item>
           <div className={styles.wrapper}>
             <img className={styles.cardItemImage} src={item.image} />
           </div>
@@ -30,7 +22,6 @@ const CartItem = ({ id, quantity }) => {
         </Grid>
         <Grid
           item
-          // xs={2}
         >
           <CartQuantity
             id={id}
@@ -39,10 +30,7 @@ const CartItem = ({ id, quantity }) => {
           />
         </Grid>
 
-        <Grid
-          item
-          // xs={2}
-        >
+        <Grid item>
           <span className={styles.cardItemPrice}>
             {formatCurrency(item.price)}
           </span>

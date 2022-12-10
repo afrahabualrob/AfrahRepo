@@ -58,9 +58,9 @@ const ExploreCards = () => {
 
         <div className={styles.exploreContentRight}>
           {[] &&
-            filteredExplore.map((exploreItem) => {
+            filteredExplore.map((exploreItem,index) => {
               return (
-                <div className={styles.exploreContentRight_item}>
+                <div key={index} className={styles.exploreContentRight_item}>
                   <ExploreCard exploreItem={exploreItem} />
                 </div>
               );

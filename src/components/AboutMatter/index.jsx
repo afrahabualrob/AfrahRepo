@@ -29,10 +29,10 @@ const AboutMatter = () => {
               communities.
             </h4>
             {[] &&
-              aboutMatter.map((item) => {
+              aboutMatter.map((item, index) => {
                 const { days, countries, designers, factories } = item;
                 return (
-                  <div>
+                  <div key={index}>
                     <div>
                       <p className={styles.category}>
                         Artisan Employment Days Created
@@ -43,8 +43,12 @@ const AboutMatter = () => {
                       <p className={styles.category}>
                         Countries Involved To Date
                       </p>
-                      {countries.map((item) => {
-                        return <p className={styles.categoryItem}>{item}</p>;
+                      {countries.map((item, index) => {
+                        return (
+                          <p key={index} className={styles.categoryItem}>
+                            {item}
+                          </p>
+                        );
                       })}
                     </div>
                     <div>
