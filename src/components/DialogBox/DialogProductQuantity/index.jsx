@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./style.module.css";
 import { Grid } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 const DialogProductQuantity = ({ availableQuantity,selectedQuantity, setSelectedQuantity }) => {
 
@@ -21,7 +23,7 @@ const DialogProductQuantity = ({ availableQuantity,selectedQuantity, setSelected
               disabled={selectedQuantity <= 1}
               onClick={decreaseQuantity}
             >
-              <img src="./assets/icons/minus.svg" alt="plus" />
+              <RemoveIcon />
             </button>
           </Grid>
           <Grid item xs={4}>
@@ -33,7 +35,7 @@ const DialogProductQuantity = ({ availableQuantity,selectedQuantity, setSelected
               onClick={increaseQuantity}
               disabled={selectedQuantity >= availableQuantity}
             >
-              <img src="./assets/icons/plus2.svg" alt="plus" />
+              <AddIcon />
             </button>
           </Grid>
         </Grid>

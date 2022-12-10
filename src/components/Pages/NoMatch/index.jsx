@@ -15,13 +15,13 @@ const NoMatch = () => {
           height="300px"
         />
         <p className={styles.quotation2}>
-          the page you are looking for not avaibel!
+          The page you are looking for not available!
         </p>
         <Grid container justifyContent="center">
           <Grid item>
-            {/* <Link to="/" className={styles.link_404}>
+            <Link to="/" className={styles.link_404}>
               Go to Home
-            </Link> */}
+            </Link>
           </Grid>
         </Grid>
       </Grid>

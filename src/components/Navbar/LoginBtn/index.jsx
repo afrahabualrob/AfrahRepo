@@ -9,7 +9,7 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  Grid
+  Grid,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import Login from "../../Registration/Login.jsx";

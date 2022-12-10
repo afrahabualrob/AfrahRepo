@@ -9,7 +9,6 @@ const CartQuantity = ({ id, quantity, availableQuantity }) => {
   const {
     decreaseCartQuantity,
     increaseCartQuantity,
-    // getItemQuantity,
   } = useShoppingCart();
 
   return (

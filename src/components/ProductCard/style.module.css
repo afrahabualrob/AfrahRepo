@@ -1,9 +1,9 @@
 .productCard_wrapper {
   padding: 12px;
   background-color: transparent;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   background-color: rgba(255, 254, 254, 0.5);
-  /* border: 1px solid red; */
+  min-height: 333px;
 }
 
 .productCard_wrapper:hover {

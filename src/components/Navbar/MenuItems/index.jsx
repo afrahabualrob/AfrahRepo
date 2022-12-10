@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MenuItem from "../MenuItem";
 import styles from "./style.module.css";
 import { Button, Grid } from "@mui/material";
@@ -14,7 +14,6 @@ const MenuItems = ({ listDirection, setIsMenuOpened }) => {
 
   const menuItems = ["shop", "journal", "about"];
   return (
-    
     <Grid
       container
       flexDirection={{ xs: "column", md: "row" }}
@@ -25,8 +24,12 @@ const MenuItems = ({ listDirection, setIsMenuOpened }) => {
       {[] &&
         menuItems.map((item, index) => {
           return (
-            <Grid item key={index} className={styles.menuItem}>
-              <MenuItem menuItem={item} setIsMenuOpened={setIsMenuOpened} />
+            <Grid item className={styles.menuItem}>
+              <MenuItem
+                key={index}
+                menuItem={item}
+                setIsMenuOpened={setIsMenuOpened}
+              />
             </Grid>
           );
         })}
@@ -34,13 +37,9 @@ const MenuItems = ({ listDirection, setIsMenuOpened }) => {
         {"Token" in cookie ? (
           <>
             <Grid item>
-              <span
-                className={styles.logoutBtn}
-                onClick={handleRemoveCookie}
-              >
-               Logout 
+              <span className={styles.logoutBtn} onClick={handleRemoveCookie}>
+                Logout
               </span>
-              
             </Grid>
           </>
         ) : (

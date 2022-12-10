@@ -27,9 +27,9 @@ const EmptyCart = ({ closeCart }) => {
           No products have been added to your cart yet
         </h6>
         <div className={styles.center}>
-          {/* <Link to="/">
-            <button className={styles.shoppingBtn}> Start shopping now</button>
-          </Link> */}
+          {/* <button className={styles.shoppingBtn}>
+            <Link to="/"> Start shopping now </Link>
+          </button> */}
         </div>
         {"Token" in cookie ? (
           <></>
@@ -40,6 +40,7 @@ const EmptyCart = ({ closeCart }) => {
             </button>
             <Dialog open={open} onClose={handleClose}>
               <DialogContent>
+              
                 <Login />
               </DialogContent>
             </Dialog>
