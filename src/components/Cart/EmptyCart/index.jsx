@@ -1,9 +1,16 @@
-import { Dialog, DialogContent } from "@mui/material";
 import React from "react";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import Login from "../../Registration/Login.jsx/index.jsx";
 import { useCookies } from "react-cookie";
+import {
+  Dialog,
+  DialogContent,
+  Toolbar,
+  IconButton,
+  Grid,
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const EmptyCart = ({ closeCart }) => {
   const [cookie, setCookie] = useCookies();
@@ -39,9 +46,21 @@ const EmptyCart = ({ closeCart }) => {
               login
             </button>
             <Dialog open={open} onClose={handleClose}>
+              <Toolbar>
+                <Grid container justifyContent="flex-end">
+                  <Grid item>
+                    <IconButton
+                      edge="end"
+                      color="inherit"
+                      aria-label="close"
+                    >
+                      <CloseIcon />
+                    </IconButton>
+                  </Grid>
+                </Grid>
+              </Toolbar>
               <DialogContent>
-              
-                <Login />
+                <Login setOpen={setOpen} />
               </DialogContent>
             </Dialog>
           </div>

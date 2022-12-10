@@ -22,8 +22,8 @@ const index = () => {
   ];
   return (
     <Carousel
-      PrevIcon={<PrevButton />}
-      NextIcon={<NextButton />}
+      // PrevIcon={<PrevButton />}
+      // NextIcon={<NextButton />}
       indicatorIconButtonProps={{
         style: {
           backgroundColor: "pink",

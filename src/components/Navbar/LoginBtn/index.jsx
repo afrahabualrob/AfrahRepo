@@ -5,10 +5,8 @@ import LoggedUser from "../LoggedUser";
 import {
   Dialog,
   DialogContent,
-  Button,
   Toolbar,
   IconButton,
-  Typography,
   Grid,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
