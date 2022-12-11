@@ -3,7 +3,7 @@
 
 React e-commerce project description
 
-Technology -> React JS : Routing, restful api,material ui and css module ,react cookie,hooks,custom hook
+Technology -> React JS : Routing, restful api,material ui, css module ,react cookie,hooks and custom hook
 
 * I offered a lot of products (using react axios ),can see each product details (route to details page)
 
