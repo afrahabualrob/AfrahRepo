@@ -10,7 +10,7 @@ Technology -> React JS : Routing, restful api,material ui and css module ,react 
 * There is a filter feature according to type (women's clothing, men's clothing, jewelry and electronics) & can filtration according to color
 also user can be arranged according to the price, ascending or descending 
 
-*I used a number of contexts to store data.
+* I used a number of contexts to store data.
 
 - Users can log in and Logout to this website
 - user can add/remove any product to the cart (can also change added quantity) 
