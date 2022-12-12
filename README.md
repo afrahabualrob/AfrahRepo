@@ -7,7 +7,7 @@ Technology ->React JS : Routing, restful api,material ui, css module ,react cook
 
 * I offered a lot of products (using react axios ),can see each product details (route to details page)
 
-* There is a filter feature according to type (women's clothing, men's clothing, jewelry and electronics) & can filtration according to color
+* There is a filter feature according to category (women's clothing, men's clothing, jewelry and electronics) & can filtration according to color
 also user can be arranged according to the price, ascending or descending 
 
 * I used a number of contexts to store data.
