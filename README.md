@@ -3,7 +3,7 @@
 
 React e-commerce project description
 
-Technology -> React JS : Routing, restful api,material ui, css module ,react cookie,hooks and custom hook
+Technology ->React JS : Routing, restful api,material ui, css module ,react cookie,hooks and custom hook
 
 * I offered a lot of products (using react axios ),can see each product details (route to details page)
 
@@ -18,6 +18,7 @@ also user can be arranged according to the price, ascending or descending
 
 Routing 
 - navigate between pages, plus No Match path
+- dynamic routing
 -  add suspense fallback
 - using lazy loading 
 
