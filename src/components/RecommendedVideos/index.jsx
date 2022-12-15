@@ -65,7 +65,7 @@ const RecommendedVideos = () => {
         {[] &&
           videos.map((recommendedVideo) => {
             return (
-              <Grid item xs={2} sm={4} md={4} key={recommendedVideo.id}>
+              <Grid item xs={6} md={4} key={recommendedVideo.id}>
                 <VideoCard video_info={recommendedVideo} />
               </Grid>
             );

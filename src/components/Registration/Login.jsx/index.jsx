@@ -85,7 +85,7 @@ const Login = ({ setOpen }) => {
           <Grid item>
             <TextField
               className={styles.loginInput}
-              ref={emailRef}
+              inputRef={emailRef}
               label="Email"
               variant="standard"
               onChange={handleEmailChange}
@@ -99,7 +99,7 @@ const Login = ({ setOpen }) => {
                 Password
               </InputLabel>
               <Input
-                ref={passwordRef}
+                inputRef={passwordRef}
                 label="pass"
                 variant="standard"
                 required
