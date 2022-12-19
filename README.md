@@ -24,5 +24,6 @@ Routing
 
 
 Login plus Logout (react-cookie)
+Error Boundary
 
 
