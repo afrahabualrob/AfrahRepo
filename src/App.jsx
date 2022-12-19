@@ -1,20 +1,18 @@
-import "./App.css";
-import "./App.css";
 import React from "react";
 import Routing from "./components/Routes/Routing";
 import { ShoppingCartProvider } from "./Context/ShoppingCartContext";
 import { FavoriteProvider } from "./Context/Favorites";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   return (
-    <div className="App">
-      
+    <ErrorBoundary>
       <ShoppingCartProvider>
         <FavoriteProvider>
           <Routing />
         </FavoriteProvider>
       </ShoppingCartProvider>
-    </div>
+    </ErrorBoundary>
   );
 }
 export default App;

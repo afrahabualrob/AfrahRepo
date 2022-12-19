@@ -11,10 +11,12 @@ import {
   Grid,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import { useShoppingCart } from "../../../Context/ShoppingCartContext";
 
-const EmptyCart = ({ closeCart }) => {
-  const [cookie, setCookie] = useCookies();
+const EmptyCart = () => {
+  const [cookie] = useCookies();
   const [open1, setOpen1] = React.useState(false);
+  const { closeCart } = useShoppingCart();
 
   const handleClickOpen = () => {
     setOpen1(true);

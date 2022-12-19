@@ -69,9 +69,9 @@ export function ShoppingCartProvider({ children }) {
     );
   };
 
-  function getItemQuantity(id) {
-    return productsJson.find((item) => item.id === id).quantity;
-  }
+  // function getItemQuantity(id) {
+  //   return productsJson.find((item) => item.id === id).quantity;
+  // }
 
   function removeFromCart(id) {
     setCartItems((currItems) => {
@@ -84,7 +84,7 @@ export function ShoppingCartProvider({ children }) {
       value={{
         openCart,
         closeCart,
-        getItemQuantity,
+        // getItemQuantity,
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,

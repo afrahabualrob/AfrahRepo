@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./style.module.css";
 import RegisterButton from "../RegisterButton";
 import axios from "axios";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Cookies, useCookies } from "react-cookie";
 import {
   FormControl,
@@ -34,10 +34,6 @@ const Login = ({ setOpen }) => {
     setUser({ ...user, password: event.target.value });
   };
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
-
   const disabledBtn = () => {
     return (
       user.email.length === 0 &&
@@ -65,7 +61,8 @@ const Login = ({ setOpen }) => {
     } else setMsg("Your email or password is incorrect.");
   };
 
-  const handleClickShowPassword = () => {
+  const handleClickShowPassword = (event) => {
+    event.preventDefault();
     setUser({
       ...user,
       showPassword: !user.showPassword,
@@ -110,7 +107,6 @@ const Login = ({ setOpen }) => {
                     <IconButton
                       aria-label="toggle password visibility"
                       onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
                     >
                       {user.showPassword ? (
                         <VisibilityOffIcon />

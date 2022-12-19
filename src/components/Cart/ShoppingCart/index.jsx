@@ -33,7 +33,7 @@ const ShoppingCart = ({ isOpen }) => {
           <ChevronLeftIcon />
         </IconButton>
       </div>
-      {cartItems.length === 0 && <EmptyCart closeCart={closeCart} />}
+      {cartItems.length === 0 && <EmptyCart/>}
       <Container>
         {cartItems.map((item) => (
           <CartItem key={item.id} {...item} />
