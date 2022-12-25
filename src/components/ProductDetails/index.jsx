@@ -9,8 +9,8 @@ const ProductDetails = () => {
   const { productsJson } = useShoppingCart();
 
   const { productId } = useParams();
+  let obj = productsJson.find((item) => item.id === +productId);
 
-  let obj = productsJson.find((item) => item.id === Number(productId));
   return (
     <Container sx={{ pt: 4 }}>
       {obj && <DialogCard productItem={obj} />}{" "}

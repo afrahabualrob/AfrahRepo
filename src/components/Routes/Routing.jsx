@@ -25,8 +25,8 @@ const Routing = () => {
               path="/products/:productId"
               element={<ProductDetailsPage />}
             />
-            <Route path="*" element={<NoMatch />} />
           </Route>
+          <Route path="*" element={<NoMatch />} />
         </Routes>
       </BrowserRouter>
     </Suspense>
